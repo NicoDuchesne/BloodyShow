@@ -4394,7 +4394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 1886011706}
-  end: {fileID: 0}
+  end: {fileID: 2484120579810050738}
 --- !u!4 &569951033
 Transform:
   m_ObjectHideFlags: 0
@@ -8960,7 +8960,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1457303671}
   - component: {fileID: 1457303672}
-  - component: {fileID: 1457303673}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -9004,26 +9003,6 @@ MonoBehaviour:
   turns: 2
   destroyed: 0
   won: 0
---- !u!114 &1457303673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457303670}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9219ebdaf72b3da4d96730933dab02ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 0}
-  blood1Here: 0
-  blood2Here: 0
-  blood3Here: 0
-  stade1: 50
-  stade2: 100
-  stade3: 100
-  fillSpeed: 20
 --- !u!1 &1506734710
 GameObject:
   m_ObjectHideFlags: 0
@@ -12948,7 +12927,7 @@ GameObject:
   - component: {fileID: 8441629293569609033}
   - component: {fileID: 3776027904051934057}
   m_Layer: 5
-  m_Name: prefabSquareBlood
+  m_Name: Blood2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13189,12 +13168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
   _speed: 10
   isMoving: 0
   isArrived: 0
-  valveNbr: 3
+  valveNbr: 1
   countValve: 0
   maxInactivTime: 1.5
 --- !u!1 &1512944842630272057
@@ -13447,7 +13426,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7044731023582999718}
   m_Layer: 5
-  m_Name: prefabEnd
+  m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13553,7 +13532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13865,7 +13844,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.44107425, y: -0.006253481}
+  m_Offset: {x: -66.16114, y: -0.9380221}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13876,7 +13855,7 @@ BoxCollider2D:
     adaptiveTiling: 1
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.117851496, y: 0.35214365}
+  m_Size: {x: 17.67772, y: 52.82155}
   m_EdgeRadius: 0
 --- !u!224 &5540438316081001423
 RectTransform:
@@ -13946,7 +13925,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.44889995, y: -0.005089581}
+  m_Offset: {x: 67.33499, y: -0.7634372}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13957,7 +13936,7 @@ BoxCollider2D:
     adaptiveTiling: 1
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10220009, y: 0.35871434}
+  m_Size: {x: 15.33001, y: 53.80715}
   m_EdgeRadius: 0
 --- !u!1 &5678645369102743287
 GameObject:
@@ -14020,7 +13999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: 90
-  indexPrefab: 0
+  indexPrefab: 1
   prefabs:
   - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
   - {fileID: 2109398876547990366, guid: b3a2fbf5b06fdb74b938f3f3df1861f4, type: 3}
@@ -14073,7 +14052,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2283248365297403638}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -14098,7 +14077,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017382473, y: -0.38373232}
+  m_Offset: {x: 2.607371, y: -57.55985}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14109,7 +14088,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5448715, y: 0.40824902}
+  m_Size: {x: 81.73073, y: 61.23735}
   m_EdgeRadius: 0
 --- !u!1 &6593594148537728708
 GameObject:
@@ -14370,7 +14349,7 @@ GameObject:
   - component: {fileID: 1490673082631611213}
   - component: {fileID: 6192021811907763565}
   m_Layer: 5
-  m_Name: prefabSquareBlood
+  m_Name: Blood1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14383,7 +14362,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2283248365297403638}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -14408,7 +14387,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014899254, y: 0.38618025}
+  m_Offset: {x: 2.234888, y: 57.92704}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -14419,7 +14398,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5299257, y: 0.42903727}
+  m_Size: {x: 79.48885, y: 64.35559}
   m_EdgeRadius: 0
 --- !u!4 &7939608300868886436
 Transform:
@@ -14581,12 +14560,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
   _speed: 10
   isMoving: 0
   isArrived: 0
-  valveNbr: 3
+  valveNbr: 1
   countValve: 0
   maxInactivTime: 1.5
 --- !u!224 &8646358799265611880
@@ -14656,7 +14635,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
