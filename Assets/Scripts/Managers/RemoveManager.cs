@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class RemoveManager : MonoBehaviour
 {
-    [SerializeField] private Transform topZone;
-    [SerializeField] private Transform leftZone;
-    [SerializeField] private Transform rightZone;
-    [SerializeField] private Transform botZone;
+    [SerializeField] public Transform topZone;
+    [SerializeField] public Transform leftZone;
+    [SerializeField] public Transform rightZone;
+    [SerializeField] public Transform botZone;
 
     private static RemoveManager instance = null;
     public static RemoveManager Instance => instance;

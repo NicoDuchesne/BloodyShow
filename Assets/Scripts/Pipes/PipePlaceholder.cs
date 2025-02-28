@@ -10,22 +10,76 @@ public class PipePlaceholder : MonoBehaviour, IDropHandler
     public bool hasTile => ContainsTile();
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag.TryGetComponent<PipePlacement>(out PipePlacement pipePlacement) && !hasTile)
+        if (eventData.pointerDrag.TryGetComponent<PipePlacement>(out PipePlacement pipePlacement))
         {
-            GameObject pipeObject = Instantiate(pipePlacement.GetPrefab(), transform);
-            actualPrefab = pipePlacement.GetPrefab();
-            float scaleFactor = this.GetComponent<RectTransform>().rect.size.x;
-            pipeObject.GetComponent<SpriteRenderer>().size = this.GetComponent<RectTransform>().rect.size;
-
-            BoxCollider2D[] childColliders = pipeObject.GetComponentsInChildren<BoxCollider2D>();
-            foreach (BoxCollider2D child in childColliders)
+            if (hasTile)
             {
-                child.size *= scaleFactor;
-                child.offset *= scaleFactor;
+                this.GetComponent<RotatePiece>().ResetRotation();
+
+                foreach (Transform child in transform)
+                {
+                    if (child.gameObject.name.Length >= 10)
+                    {
+                        if (child.gameObject.name.Substring(0, 10).Equals("prefabPipe"))
+                        {
+
+                            Destroy(child.gameObject);
+                        }
+                    }
+                }
+
+                actualPrefab = null;
+
+                GameObject pipeObject = Instantiate(pipePlacement.GetPrefab(), transform);
+                actualPrefab = pipePlacement.GetPrefab();
+                float scaleFactor = this.GetComponent<RectTransform>().rect.size.x;
+                pipeObject.GetComponent<SpriteRenderer>().size = this.GetComponent<RectTransform>().rect.size;
+
+                BoxCollider2D[] childColliders = pipeObject.GetComponentsInChildren<BoxCollider2D>();
+                foreach (BoxCollider2D child in childColliders)
+                {
+                    child.size *= scaleFactor;
+                    child.offset *= scaleFactor;
+                }
+
+                pipeObject.transform.localPosition = Vector2.zero;
+
+            } else
+            {
+                GameObject pipeObject = Instantiate(pipePlacement.GetPrefab(), transform);
+                actualPrefab = pipePlacement.GetPrefab();
+                float scaleFactor = this.GetComponent<RectTransform>().rect.size.x;
+                pipeObject.GetComponent<SpriteRenderer>().size = this.GetComponent<RectTransform>().rect.size;
+
+                BoxCollider2D[] childColliders = pipeObject.GetComponentsInChildren<BoxCollider2D>();
+                foreach (BoxCollider2D child in childColliders)
+                {
+                    child.size *= scaleFactor;
+                    child.offset *= scaleFactor;
+                }
+
+                pipeObject.transform.localPosition = Vector2.zero;
+                PipeCounter.Instance.Increment();
             }
 
-            pipeObject.transform.localPosition = Vector2.zero;
-            PipeCounter.Instance.Increment();
+            //if (!hasTile)
+            //{
+            //    GameObject pipeObject = Instantiate(pipePlacement.GetPrefab(), transform);
+            //    actualPrefab = pipePlacement.GetPrefab();
+            //    float scaleFactor = this.GetComponent<RectTransform>().rect.size.x;
+            //    pipeObject.GetComponent<SpriteRenderer>().size = this.GetComponent<RectTransform>().rect.size;
+
+            //    BoxCollider2D[] childColliders = pipeObject.GetComponentsInChildren<BoxCollider2D>();
+            //    foreach (BoxCollider2D child in childColliders)
+            //    {
+            //        child.size *= scaleFactor;
+            //        child.offset *= scaleFactor;
+            //    }
+
+            //    pipeObject.transform.localPosition = Vector2.zero;
+            //    PipeCounter.Instance.Increment();
+            //}
+            
         }
 
         if (eventData.pointerDrag.TryGetComponent<PipeMovement>(out PipeMovement pipeMovement))
