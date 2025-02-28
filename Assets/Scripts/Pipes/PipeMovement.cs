@@ -33,13 +33,18 @@ public class PipeMovement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             transform.GetChild(transform.childCount - 1).position = MouseWorldPosition() + offset;
         }
 
-        //if (eventData.hovered.Contains(RemoveManager.Instance.topZone.gameObject))
-        //{
-        //    GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 80, 80, 255);
-        //} else
-        //{
-        //    GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
-        //}
+        if (eventData.hovered.Contains(RemoveManager.Instance.topZone.gameObject) ||
+            eventData.hovered.Contains(RemoveManager.Instance.leftZone.gameObject) ||
+            eventData.hovered.Contains(RemoveManager.Instance.rightZone.gameObject)||
+            eventData.hovered.Contains(RemoveManager.Instance.botZone.gameObject))
+        {
+            Debug.Log(GetTileTransform().gameObject.name);
+            GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(255/255f, 80/255f, 80/255f, 255/255f);
+        }
+        else
+        {
+            GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        }
 
 
     }
