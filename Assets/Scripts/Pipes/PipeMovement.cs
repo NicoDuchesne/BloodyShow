@@ -1,3 +1,4 @@
+using Codice.CM.Client.Differences;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro.Examples;
@@ -19,7 +20,7 @@ public class PipeMovement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             origin = transform.GetChild(transform.childCount-1).position;
             offset = transform.GetChild(transform.childCount - 1).position - MouseWorldPosition();
             GetComponent<RotatePiece>().counterDisplay.enabled = false;
-            GameObject.Find("Bin").transform.GetChild(0).gameObject.SetActive(true);
+            RemoveManager.Instance.EnableZones();
         }
         
     }
@@ -37,12 +38,13 @@ public class PipeMovement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         GetComponent<RotatePiece>().counterDisplay.enabled = true;
-        GameObject.Find("Bin").transform.GetChild(0).gameObject.SetActive(false);
+        RemoveManager.Instance.DisableZones();
 
         if (hasTile)
         {
             Debug.Log("OnEndDrag");
             transform.GetChild(transform.childCount - 1).position = origin;
+            
         }
     }
 
