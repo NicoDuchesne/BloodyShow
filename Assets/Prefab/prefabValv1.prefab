@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 10078184629060968}
   - component: {fileID: 649202635326970502}
   - component: {fileID: 6546011382700913879}
+  - component: {fileID: 8283069121951045393}
   - component: {fileID: 7046444332882569980}
   - component: {fileID: 565435002757040802}
   - component: {fileID: 5622563680931517345}
@@ -106,6 +107,22 @@ MonoBehaviour:
   connectLeft: 0
   connectRight: 0
   position: {x: 0, y: 0}
+--- !u!114 &8283069121951045393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5039337981516017355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2568b251208b874980ccae60a0c284e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Valve1: {fileID: 21300000, guid: cbef0fe35f911aa4580d600d393cf8a0, type: 3}
+  Valve2: {fileID: 21300000, guid: 4cab38294fb39db4e914647b1b1b50e8, type: 3}
+  spriteRenderer: {fileID: 649202635326970502}
+  valide: 0
 --- !u!61 &7046444332882569980
 BoxCollider2D:
   m_ObjectHideFlags: 0
