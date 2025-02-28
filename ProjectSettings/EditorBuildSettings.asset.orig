@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 0
+    path: Assets/Scenes/Testing_Nico/PlanManager.unity
+    guid: 9a5e1fa36e1a12d48be2ee8fd656395b
+  - enabled: 0
+<<<<<<< HEAD
+=======
+    path: Assets/Scenes/Protoype.unity
+    guid: eb3448f72b423884188d2ae9ac399d5d
+  - enabled: 1
+>>>>>>> main
+    path: Assets/Scenes/Dorian_Guillon.unity
+    guid: 3452b5bfd3fd1ba438530354410b5ec0
+  - enabled: 1
+    path: Assets/Scenes/NiveauDorian1.unity
+    guid: a8ffbc93891432b44a508c5c7c79e324
+  - enabled: 0
+<<<<<<< HEAD
+=======
+    path: Assets/Scenes/Protoype 3.unity
+    guid: fe81aa108e47e474189d0074e08f2648
+  - enabled: 0
+>>>>>>> main
+    path: Assets/Scenes/Protoype 4.unity
+    guid: 7e7707be6d712654d884ccfbcffc1a98
+  - enabled: 1
+    path: Assets/Scenes/IntegrationArt.unity
+    guid: b34b3fd1dc2b3d94ca40e9926b00e045
+  m_configObjects: {}
