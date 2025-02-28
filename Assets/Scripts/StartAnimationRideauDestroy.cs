@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndAnimationRideauDestroy : MonoBehaviour
+public class StartAnimationRideauDestroy : MonoBehaviour
 {
     public GameObject rideau;
 
 
-    public void RideauOn()
+    // Start is called before the first frame update
+    void Start()
     {
         rideau.SetActive(true);
     }
