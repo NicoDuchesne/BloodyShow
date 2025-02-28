@@ -32,7 +32,16 @@ public class PipeMovement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             Debug.Log("OnDrag");
             transform.GetChild(transform.childCount - 1).position = MouseWorldPosition() + offset;
         }
-        
+
+        //if (eventData.hovered.Contains(RemoveManager.Instance.topZone.gameObject))
+        //{
+        //    GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 80, 80, 255);
+        //} else
+        //{
+        //    GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+        //}
+
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
