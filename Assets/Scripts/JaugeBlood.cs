@@ -17,6 +17,10 @@ public class JaugeBlood : MonoBehaviour
     public int stade3 = 100;
     public float fillSpeed = 20f;
 
+    //Son
+    public AudioSource audioSource;
+    public AudioClip sound;
+
     public void SetMaxBlood(int blood)
     {
         slider.maxValue = blood;
@@ -79,6 +83,7 @@ public class JaugeBlood : MonoBehaviour
             blood1Here = true;
             blood2Here = false;
             blood3Here = false;
+            AudioSource.PlayClipAtPoint(sound, transform.position);
         }
 
         else if (blood1Here == true && blood2Here == false && blood3Here == false)
@@ -86,6 +91,7 @@ public class JaugeBlood : MonoBehaviour
             blood1Here = false;
             blood2Here = true;
             blood3Here = false;
+            AudioSource.PlayClipAtPoint(sound, transform.position);
         }
 
         else if (blood1Here == false && blood2Here == false && blood3Here == false)
@@ -93,6 +99,7 @@ public class JaugeBlood : MonoBehaviour
             blood1Here = false;
             blood2Here = false;
             blood3Here = true;
+            AudioSource.PlayClipAtPoint(sound, transform.position);
         }
     }
 }
