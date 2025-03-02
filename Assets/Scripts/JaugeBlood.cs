@@ -83,7 +83,7 @@ public class JaugeBlood : MonoBehaviour
             blood1Here = true;
             blood2Here = false;
             blood3Here = false;
-            AudioSource.PlayClipAtPoint(sound, transform.position);
+            audioSource.PlayOneShot(sound);
         }
 
         else if (blood1Here == true && blood2Here == false && blood3Here == false)
@@ -91,7 +91,7 @@ public class JaugeBlood : MonoBehaviour
             blood1Here = false;
             blood2Here = true;
             blood3Here = false;
-            AudioSource.PlayClipAtPoint(sound, transform.position);
+            audioSource.PlayOneShot(sound);
         }
 
         else if (blood1Here == false && blood2Here == false && blood3Here == false)
@@ -99,7 +99,7 @@ public class JaugeBlood : MonoBehaviour
             blood1Here = false;
             blood2Here = false;
             blood3Here = true;
-            AudioSource.PlayClipAtPoint(sound, transform.position);
+            audioSource.PlayOneShot(sound);
         }
     }
 }
