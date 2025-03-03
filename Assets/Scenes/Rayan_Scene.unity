@@ -1275,6 +1275,7 @@ MonoBehaviour:
   counterDisplay: {fileID: 0}
   prefabs: []
   prefabsLine: []
+  counter: 0
 --- !u!114 &377363947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3571,7 +3572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1009252702
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6852,6 +6853,8 @@ MonoBehaviour:
   stade2: 60
   stade3: 100
   fillSpeed: 20
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!114 &1744076213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7845,7 +7848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1935354521
 RectTransform:
   m_ObjectHideFlags: 0
