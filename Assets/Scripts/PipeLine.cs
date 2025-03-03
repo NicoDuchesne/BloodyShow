@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class PipeLine : MonoBehaviour
 {
-    public bool isPipeline = true;
+    public bool isLine = true;
+    public Sprite orignialSprite;
+    public Sprite rotatedSprite;
+
 }

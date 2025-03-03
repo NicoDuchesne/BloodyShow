@@ -90,6 +90,7 @@ public class GridManager : MonoBehaviour
                     //pipePlaceholder.actualPrefab = newPrefab;
 
                     pipe.GetComponent<SpriteRenderer>().size = gridSize;
+                    rotatePiece.UpdateSprite();
 
                     BoxCollider2D[] childColliders = pipe.GetComponentsInChildren<BoxCollider2D>();
                     foreach (BoxCollider2D col in childColliders)

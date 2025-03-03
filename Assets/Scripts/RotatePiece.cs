@@ -13,6 +13,9 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
 
     private int counter = 0;
     private int rotation = 0;
+
+
+
     public virtual void OnPointerClick(PointerEventData eventData)
     {
 
@@ -21,6 +24,7 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
             counter++;
             UpdateCounterDisplay();
             UpdateRotation();
+            UpdateSprite();
 
             Scene scene = SceneManager.GetActiveScene();
 
@@ -89,6 +93,24 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
     {
         rotation = -90 * (counter%4);
     }
+
+    public void UpdateSprite()
+    {
+        GameObject tile = GetTile(transform);
+        PipeLine pipeLine = tile.GetComponent<PipeLine>();
+        SpriteRenderer spriteRenderer = tile.GetComponent<SpriteRenderer>();
+
+        if (counter % 4 == 0)
+        {
+            spriteRenderer.sprite = pipeLine.orignialSprite;
+        }
+        else
+        {
+            spriteRenderer.sprite = pipeLine.rotatedSprite;
+        }
+
+    }
+
 
     public void SwapRotations(RotatePiece other)
     {
@@ -162,5 +184,22 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
             }
         }
         return false;
+    }
+
+    public GameObject GetTile(Transform parent)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.gameObject.name.Length >= 10)
+            {
+                string substring = child.gameObject.name.Substring(0, 10);
+                if (substring.Equals("prefabPipe"))
+                {
+                    return child.gameObject;
+                }
+            }
+        }
+        Debug.Log("nuuuuuuuuuuuuuuuuuuuuul");
+        return null;
     }
 }
