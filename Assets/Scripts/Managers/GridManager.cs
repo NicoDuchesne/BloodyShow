@@ -1,6 +1,9 @@
+using Codice.Client.BaseCommands;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
@@ -25,7 +28,9 @@ public class GridManager : MonoBehaviour
                 {
                     GameObject valve = Instantiate(rotation.GetActualPrefab(), child);
 
+                    
                     valve.GetComponent<SpriteRenderer>().size = gridSize;
+                    rotation.RefreshSprite();
 
                     BoxCollider2D[] childColliders = valve.GetComponentsInChildren<BoxCollider2D>();
                     foreach (BoxCollider2D col in childColliders)
@@ -70,6 +75,7 @@ public class GridManager : MonoBehaviour
                 GameObject valve = Instantiate(rotateValve.GetActualPrefab(), child);
 
                 valve.GetComponent<SpriteRenderer>().size = gridSize;
+                rotateValve.RefreshSprite();
 
                 BoxCollider2D[] childColliders = valve.GetComponentsInChildren<BoxCollider2D>();
                 foreach (BoxCollider2D col in childColliders)
@@ -86,9 +92,7 @@ public class GridManager : MonoBehaviour
                 if (childGO.GetComponent<PipePlaceholder>().actualPrefab != null)
                 {
                     PipePlaceholder pipePlaceholder = childGO.GetComponent<PipePlaceholder>();
-                    //GameObject newPrefab = rotatePiece.GetNextPrefab(pipePlaceholder.actualPrefab);
                     GameObject pipe = Instantiate(pipePlaceholder.actualPrefab, child);
-                    //pipePlaceholder.actualPrefab = newPrefab;
 
                     pipe.GetComponent<SpriteRenderer>().size = gridSize;
                     if (rotatePiece.counter % 4 == 0)
@@ -132,6 +136,7 @@ public class GridManager : MonoBehaviour
                 GameObject valve = Instantiate(rotateValve.GetNextPrefab(rotateValve.GetActualPrefab()), child);
 
                 valve.GetComponent<SpriteRenderer>().size = gridSize;
+                rotateValve.RefreshSprite();
 
                 BoxCollider2D[] childColliders = valve.GetComponentsInChildren<BoxCollider2D>();
                 foreach (BoxCollider2D col in childColliders)
@@ -216,6 +221,25 @@ public class GridManager : MonoBehaviour
                 }
             }
         }
+    }
+
+   public bool CheckWinCondition()
+   {
+
+        foreach (Transform child in grid.transform)
+        {
+            GameObject childGO = child.gameObject;
+
+            if (childGO.TryGetComponent<RotateValve>(out RotateValve rotateValve))
+            {
+                if (!rotateValve.isEnabled)
+                {
+                    return false;
+                }
+                
+            }
+        }
+        return true;
     }
 
 

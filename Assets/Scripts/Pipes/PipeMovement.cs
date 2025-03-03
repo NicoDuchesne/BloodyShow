@@ -33,7 +33,6 @@ public class PipeMovement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, I
             eventData.hovered.Contains(RemoveManager.Instance.rightZone.gameObject)||
             eventData.hovered.Contains(RemoveManager.Instance.botZone.gameObject))
         {
-            Debug.Log(GetTileTransform().gameObject.name);
             GetTileTransform().gameObject.GetComponent<SpriteRenderer>().color = new Color(255/255f, 80/255f, 80/255f, 255/255f);
         }
         else

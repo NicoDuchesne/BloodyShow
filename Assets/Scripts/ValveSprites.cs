@@ -17,18 +17,4 @@ public class ValveSprites : MonoBehaviour
     public Sprite[] doubleDisableRot;
     public Sprite[] doubleMiddleRot;
     public Sprite[] doubleEnableRot;
-
-    public Sprite[] simpleDisableCourb;
-    public Sprite[] simpleEnableCourb;
-
-    public Sprite[] simpleDisableRotCourb;
-    public Sprite[] simpleEnableRotCourb;
-
-    public Sprite[] doubleDisableCourb;
-    public Sprite[] doubleMiddleCourb;
-    public Sprite[] doubleEnableCourb;
-
-    public Sprite[] doubleDisableRotCourb;
-    public Sprite[] doubleMiddleRotCourb;
-    public Sprite[] doubleEnableRotCourb;
 }

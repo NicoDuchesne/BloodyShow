@@ -15,8 +15,8 @@ public class BloodMovement : MonoBehaviour
     public bool isMoving = false;
     public bool isArrived = false;
 
-    public int valveNbr;
-    public int countValve = 0;
+    //public int valveNbr;
+    //public int countValve = 0;
 
     public float maxInactivTime = 2f;
     private float InactivTimer;
@@ -29,9 +29,11 @@ public class BloodMovement : MonoBehaviour
              if (pipes.CompareTag("Pipe"))
              {
                Debug.Log("Entre");
-                 if (pipes.transform.parent.gameObject.GetComponent<RotateValve>() != null)
+                 if (pipes.transform.parent.gameObject.TryGetComponent<RotateValve>(out RotateValve rotate))
                  {
-                   countValve++;
+                   //countValve++;
+                    rotate.counter++;
+                    rotate.RefreshSprite();
                    //code pour  changer les sprites
                    //ValveChengement valveChengement = pipes.GetComponentInChildren<ValveChengement>();
                    //valveChengement.valide++;
@@ -71,8 +73,8 @@ public class BloodMovement : MonoBehaviour
 
             if (InactivTimer > maxInactivTime)
             {
-                
-                if (countValve == valveNbr && isArrived)
+
+                if (/*countValve == valveNbr &&*/isArrived)
                 {
                     GameManager.Instance.won = true;
                 }

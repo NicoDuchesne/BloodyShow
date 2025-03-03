@@ -20,12 +20,27 @@ public class PipePlacement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
         Debug.Log("OnBeginDrag");
         origin = transform.position;
         offset = transform.position - MouseWorldPosition();
+
+        RemoveManager.Instance.EnableZones();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("OnDrag");
         transform.position = MouseWorldPosition() + offset;
+
+        if (eventData.hovered.Contains(RemoveManager.Instance.topZone.gameObject) ||
+            eventData.hovered.Contains(RemoveManager.Instance.leftZone.gameObject) ||
+            eventData.hovered.Contains(RemoveManager.Instance.rightZone.gameObject) ||
+            eventData.hovered.Contains(RemoveManager.Instance.botZone.gameObject))
+        {
+            gameObject.GetComponent<Image>().color = new Color(255 / 255f, 80 / 255f, 80 / 255f, 255 / 255f);
+        }
+        else
+        {
+            gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        }
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -33,6 +48,8 @@ public class PipePlacement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
         Debug.Log("OnEndDrag");
         transform.position = origin;
         audioSource.PlayOneShot(sound);   // sound for placement pipes
+
+        RemoveManager.Instance.DisableZones();
     }
 
     private Vector3 MouseWorldPosition()

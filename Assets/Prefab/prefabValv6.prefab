@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2077596620930998282}
   - component: {fileID: 2878819960420884657}
   - component: {fileID: 368059056036883851}
+  - component: {fileID: -3870897042626901108}
   m_Layer: 0
   m_Name: prefabValv6
   m_TagString: Pipe
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 9548715087d9158429451b08c3d6cf6e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4aa2ee852feb1e04b90a0468685fafa0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -240,6 +241,88 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3870897042626901108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109398876547990366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769355b641c478b4db1a9747a74306a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  simpleDisable:
+  - {fileID: 21300000, guid: 083e1caac57105e42986042f3b3387a3, type: 3}
+  - {fileID: 21300000, guid: 7d1e239263e6edf48a3852fdb5160f1d, type: 3}
+  - {fileID: 21300000, guid: 7edf59f66b24e624da2b00d1d6307181, type: 3}
+  - {fileID: 21300000, guid: bfdf86f7318efd6469a0d4fda805b5ac, type: 3}
+  - {fileID: 21300000, guid: fef58b6d9e8cf944992ce44b0e48b3ec, type: 3}
+  - {fileID: 21300000, guid: 256f61bfdb67a8149ace5be2f812ae2e, type: 3}
+  simpleEnable:
+  - {fileID: 21300000, guid: eb46c3d578edab940bf3053d989be9a9, type: 3}
+  - {fileID: 21300000, guid: ea14665373f819f4ab63e6c54515c1d5, type: 3}
+  - {fileID: 21300000, guid: a1b63796b6e2fbe479c337032980f187, type: 3}
+  - {fileID: 21300000, guid: d47395a55c64654478d22f4dd92ea3e0, type: 3}
+  - {fileID: 21300000, guid: 9b2d91cceb729c549b9784697a8edaff, type: 3}
+  - {fileID: 21300000, guid: 6c07ff40edd73b846a8ae29715dfdaf8, type: 3}
+  simpleDisableRot:
+  - {fileID: 21300000, guid: 2670c2202cef7aa4d96d09710c87048c, type: 3}
+  - {fileID: 21300000, guid: 6a6c88e754dec4545bd036941dcada5f, type: 3}
+  - {fileID: 21300000, guid: 970ea659346333b4cb10584860fd71e1, type: 3}
+  - {fileID: 21300000, guid: 50c1292d10350ab4b8c317c8a0193774, type: 3}
+  - {fileID: 21300000, guid: 751878d3e722a3d409b7b3231807fddd, type: 3}
+  - {fileID: 21300000, guid: cc3f096d4786636418f0a0f38e3e8c94, type: 3}
+  simpleEnableRot:
+  - {fileID: 21300000, guid: 250e57bfb85256d4fadb6568648fa511, type: 3}
+  - {fileID: 21300000, guid: 8a8d50f46260cd045a51877d814d9b02, type: 3}
+  - {fileID: 21300000, guid: 360a1f84052a0d04baecad8462a32d56, type: 3}
+  - {fileID: 21300000, guid: a90f6336beea9e240a9b4c962ce61009, type: 3}
+  - {fileID: 21300000, guid: c7626d9afb57dd844b0d123da372a8b5, type: 3}
+  - {fileID: 21300000, guid: d9c027fd182107a4d9315383d78af1f3, type: 3}
+  doubleDisable:
+  - {fileID: 21300000, guid: 80a1e167b0536e649a298ed9888c2c52, type: 3}
+  - {fileID: 21300000, guid: da2e3153ebe68b5469e469c0c0b8b2b4, type: 3}
+  - {fileID: 21300000, guid: 204348d661f527f469116fcebbb881ed, type: 3}
+  - {fileID: 21300000, guid: 01af35bf882ab6746a8e3cd1055ba717, type: 3}
+  - {fileID: 21300000, guid: 954c69a493138004380a4606aebe6c31, type: 3}
+  - {fileID: 21300000, guid: 8420c1f2df08c6c40a16706e111baf7e, type: 3}
+  doubleMiddle:
+  - {fileID: 21300000, guid: 1fa08d95d623cc84badeae98284c516d, type: 3}
+  - {fileID: 21300000, guid: 91c9bbb516345c645ae7574258d5a403, type: 3}
+  - {fileID: 21300000, guid: 15cd4d95c46f3a5419959f97b48516bc, type: 3}
+  - {fileID: 21300000, guid: b809908b3fe5d904e8c4c8cdfa0d86bc, type: 3}
+  - {fileID: 21300000, guid: 2044828462fddc24586579ea0ee42ed0, type: 3}
+  - {fileID: 21300000, guid: 80519b650b93e554ea577f4e8a73264e, type: 3}
+  doubleEnable:
+  - {fileID: 21300000, guid: 1504ac8d7b5ed9747bf940d6827ff709, type: 3}
+  - {fileID: 21300000, guid: e476e8841f4ceef419af8e2f2903f53b, type: 3}
+  - {fileID: 21300000, guid: 4c0d43f62b3effb469277199525416bb, type: 3}
+  - {fileID: 21300000, guid: ac6d82b5559a23345ad1debc386526dc, type: 3}
+  - {fileID: 21300000, guid: 469a7b7932d2bb345ac21c20139b6cf1, type: 3}
+  - {fileID: 21300000, guid: b1768a0732b8c8e42a5409372bedcdea, type: 3}
+  doubleDisableRot:
+  - {fileID: 21300000, guid: 1ba4ca311c9fd8a4fba8b6bbb36fe6ef, type: 3}
+  - {fileID: 21300000, guid: 98694b4e7c1149048b8d3e0144f8596c, type: 3}
+  - {fileID: 21300000, guid: f33a7aa3ac1eee448b314b83e2bcc6bb, type: 3}
+  - {fileID: 21300000, guid: 7f464f1c2cbfc8946b2f4da94ca2848b, type: 3}
+  - {fileID: 21300000, guid: 40123e8bacbef944d9603d04641b31d7, type: 3}
+  - {fileID: 21300000, guid: 9548715087d9158429451b08c3d6cf6e, type: 3}
+  doubleMiddleRot:
+  - {fileID: 21300000, guid: 97ff318555c82004aa344df9db1db604, type: 3}
+  - {fileID: 21300000, guid: 32d51f7564708e9439824a0cb98121cd, type: 3}
+  - {fileID: 21300000, guid: 4601023fc0ad10d4aad7bb5175dc5dc0, type: 3}
+  - {fileID: 21300000, guid: efd6e1d2c8c01af49b681e3e2a45eb2c, type: 3}
+  - {fileID: 21300000, guid: 2411f70a0a456a44d9f45cf3a0642f46, type: 3}
+  - {fileID: 21300000, guid: bff24c41650fb6f468e12d81a0132704, type: 3}
+  doubleEnableRot:
+  - {fileID: 21300000, guid: 139b6d96cd7b12845bb500b67286cdd1, type: 3}
+  - {fileID: 21300000, guid: f679ba9526af18d41812148e48a9b787, type: 3}
+  - {fileID: 21300000, guid: cf339c260da72084e959528ec47bbf32, type: 3}
+  - {fileID: 21300000, guid: fbc211300ac945348814ac9cc24a72db, type: 3}
+  - {fileID: 21300000, guid: 8b12fdbae90c88547bdcbbdd9ba8cd7d, type: 3}
+  - {fileID: 21300000, guid: 9009a1d8aae214540b49cdf51b506cf3, type: 3}
 --- !u!1 &7040005814912599412
 GameObject:
   m_ObjectHideFlags: 0

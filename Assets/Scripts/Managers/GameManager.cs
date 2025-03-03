@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             {
                 gridManager.NextPhase();
                 StartBlood();
-            } else if(won && counter == turns)
+            } else if(won && counter == turns && gridManager.CheckWinCondition())
             {
                 blockScreen.transform.GetChild(0).gameObject.SetActive(false);
                 victoryScreen.transform.GetChild(0).gameObject.SetActive(true);

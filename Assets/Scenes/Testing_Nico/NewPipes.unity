@@ -4972,8 +4972,6 @@ MonoBehaviour:
   _speed: 10
   isMoving: 0
   isArrived: 0
-  valveNbr: 1
-  countValve: 0
   maxInactivTime: 1.5
 --- !u!61 &585380146
 BoxCollider2D:
@@ -15166,13 +15164,13 @@ RectTransform:
   - {fileID: 1353743668}
   - {fileID: 1886011707}
   - {fileID: 964785754}
+  - {fileID: 1972384785}
+  - {fileID: 287004484}
+  - {fileID: 365243180}
   - {fileID: 235421448}
   - {fileID: 614197834}
   - {fileID: 1899186251}
   - {fileID: 1709414154}
-  - {fileID: 287004484}
-  - {fileID: 1972384785}
-  - {fileID: 365243180}
   - {fileID: 510781673}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16788,6 +16786,14 @@ MonoBehaviour:
   prefabs:
   - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
   - {fileID: 2109398876547990366, guid: b3a2fbf5b06fdb74b938f3f3df1861f4, type: 3}
+  courbPrefabs:
+  - {fileID: 2109398876547990366, guid: 4c908389ab4290e46bde833ca1c2f837, type: 3}
+  - {fileID: 2109398876547990366, guid: 58f9661076464db48a89bfae4259fd08, type: 3}
+  - {fileID: 2109398876547990366, guid: 3bad6b697606cf64d99e322860d5660f, type: 3}
+  - {fileID: 2109398876547990366, guid: c93841e9437eaa94dacd43bb69f7175b, type: 3}
+  isCourb: 0
+  isDouble: 1
+  counter: 0
 --- !u!224 &444669941744721325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18263,8 +18269,6 @@ MonoBehaviour:
   _speed: 10
   isMoving: 0
   isArrived: 0
-  valveNbr: 1
-  countValve: 0
   maxInactivTime: 1.5
 --- !u!82 &8004563203996226398
 AudioSource:

@@ -142,7 +142,7 @@ public class GDmanager : MonoBehaviour
                     bloodGO.name = "Blood"+(index+1).ToString();
                     BloodMovement bloodMovement = bloodGO.GetComponent<BloodMovement>();
                     bloodMovement.jaugeBlood = actualJauge.GetComponent<JaugeBlood>();
-                    bloodMovement.valveNbr = valvePos.Count;
+                    //bloodMovement.valveNbr = valvePos.Count;
                     RectTransform bloodRect = bloodGO.GetComponent<RectTransform>();
                     bloodRect.sizeDelta = new Vector2(divDimension, divDimension);
 

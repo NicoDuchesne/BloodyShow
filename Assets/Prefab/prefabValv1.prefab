@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 1ba4ca311c9fd8a4fba8b6bbb36fe6ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b53b0bbb5acac9045a624084011aa2d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -289,8 +289,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 954c69a493138004380a4606aebe6c31, type: 3}
   - {fileID: 21300000, guid: 8420c1f2df08c6c40a16706e111baf7e, type: 3}
   doubleMiddle:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 1fa08d95d623cc84badeae98284c516d, type: 3}
+  - {fileID: 21300000, guid: 91c9bbb516345c645ae7574258d5a403, type: 3}
   - {fileID: 21300000, guid: 15cd4d95c46f3a5419959f97b48516bc, type: 3}
   - {fileID: 21300000, guid: b809908b3fe5d904e8c4c8cdfa0d86bc, type: 3}
   - {fileID: 21300000, guid: 2044828462fddc24586579ea0ee42ed0, type: 3}
@@ -323,16 +323,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fbc211300ac945348814ac9cc24a72db, type: 3}
   - {fileID: 21300000, guid: 8b12fdbae90c88547bdcbbdd9ba8cd7d, type: 3}
   - {fileID: 21300000, guid: 9009a1d8aae214540b49cdf51b506cf3, type: 3}
-  simpleDisableCourb: []
-  simpleEnableCourb: []
-  simpleDisableRotCourb: []
-  simpleEnableRotCourb: []
-  doubleDisableCourb: []
-  doubleMiddleCourb: []
-  doubleEnableCourb: []
-  doubleDisableRotCourb: []
-  doubleMiddleRotCourb: []
-  doubleEnableRotCourb: []
 --- !u!1 &6925341435521562350
 GameObject:
   m_ObjectHideFlags: 0

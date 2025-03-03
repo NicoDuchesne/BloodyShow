@@ -6,13 +6,13 @@ using UnityEngine.EventSystems;
 
 public class RotateValve : MonoBehaviour, IRotatable
 {
-    [SerializeField] private int rotation = 90;
+    [SerializeField] public int rotation;
     [SerializeField] public int indexPrefab = 0;
     [SerializeField] private GameObject[] prefabs;
     [SerializeField] private GameObject[] courbPrefabs;
-    [SerializeField] bool isCourb;
-    [SerializeField] bool isDouble;
-    private int counter = 0;
+    [SerializeField] public bool isCourb;
+    [SerializeField] public bool isDouble;
+    [HideInInspector] public int counter = 0;
     public bool isEnabled => checkEnabled();
     
 
@@ -25,10 +25,10 @@ public class RotateValve : MonoBehaviour, IRotatable
     {
         if (isCourb)
         {
-            return prefabs[indexPrefab];
+            return courbPrefabs[indexPrefab];
         } else
         {
-            return courbPrefabs[indexPrefab];
+            return prefabs[indexPrefab];
         }
         
     }
@@ -71,7 +71,7 @@ public class RotateValve : MonoBehaviour, IRotatable
         
     }
 
-    public void refreshSprite()
+    public void RefreshSprite()
     {
         int id = 0;
         GameObject valve = null;
@@ -86,7 +86,7 @@ public class RotateValve : MonoBehaviour, IRotatable
                 }
             }
         }
-        Sprite sprite = valve.GetComponent<SpriteRenderer>().sprite;
+        SpriteRenderer spriteRenderer = valve.GetComponent<SpriteRenderer>();
         ValveSprites sprites = valve.GetComponent<ValveSprites>();
 
         if (isCourb)
@@ -97,125 +97,66 @@ public class RotateValve : MonoBehaviour, IRotatable
             id = indexPrefab;
         }
 
-        if(isCourb)
+
+        if (isDouble)
         {
-            if (isDouble)
+            if (rotation == 0)
             {
-                if (rotation == 0)
+                if (counter == 0)
                 {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.doubleDisableCourb[id];
-                    }
-                    else if (counter == 1)
-                    {
-                        sprite = sprites.doubleMiddleCourb[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.doubleEnableCourb[id];
-                    }
+                    spriteRenderer.sprite = sprites.doubleDisable[id];
+                }
+                else if (counter == 1)
+                {
+                    spriteRenderer.sprite = sprites.doubleMiddle[id];
                 }
                 else
                 {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.doubleDisableRotCourb[id];
-                    }
-                    else if (counter == 1)
-                    {
-                        sprite = sprites.doubleMiddleRotCourb[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.doubleEnableRotCourb[id];
-                    }
+                    spriteRenderer.sprite = sprites.doubleEnable[id];
                 }
             }
             else
             {
-                if (rotation == 0)
+                if (counter == 0)
                 {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.simpleDisableCourb[id];
-                    } else
-                    {
-                        sprite = sprites.simpleEnableCourb[id];
-                    }
-                } else
-                {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.simpleDisableRotCourb[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.simpleEnableRotCourb[id];
-                    }
+                    spriteRenderer.sprite = sprites.doubleDisableRot[id];
                 }
-            }
-        } else
-        {
-            if (isDouble)
-            {
-                if (rotation == 0)
+                else if (counter == 1)
                 {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.doubleDisable[id];
-                    }
-                    else if (counter == 1)
-                    {
-                        sprite = sprites.doubleMiddle[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.doubleEnable[id];
-                    }
+                    spriteRenderer.sprite = sprites.doubleMiddleRot[id];
                 }
                 else
                 {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.doubleDisableRot[id];
-                    }
-                    else if (counter == 1)
-                    {
-                        sprite = sprites.doubleMiddleRot[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.doubleEnableRot[id];
-                    }
-                }
-            }
-            else
-            {
-                if (rotation == 0)
-                {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.simpleDisable[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.simpleEnable[id];
-                    }
-                }
-                else
-                {
-                    if (counter == 0)
-                    {
-                        sprite = sprites.simpleDisableRot[id];
-                    }
-                    else
-                    {
-                        sprite = sprites.simpleEnableRot[id];
-                    }
+                    spriteRenderer.sprite = sprites.doubleEnableRot[id];
                 }
             }
         }
+        else
+        {
+            if (rotation == 0)
+            {
+                if (counter == 0)
+                {
+                    spriteRenderer.sprite = sprites.simpleDisable[id];
+                }
+                else
+                {
+                    spriteRenderer.sprite = sprites.simpleEnable[id];
+                }
+            }
+            else
+            {
+                if (counter == 0)
+                {
+                    spriteRenderer.sprite = sprites.simpleDisableRot[id];
+                }
+                else
+                {
+                    spriteRenderer.sprite = sprites.simpleEnableRot[id];
+                }
+            }
+        }
+
     }
 
     private bool checkEnabled()
