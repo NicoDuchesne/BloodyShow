@@ -10,6 +10,10 @@ public class PipePlacement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
     private Vector3 offset;
     private Vector3 origin;
 
+    //Son
+    public AudioSource audioSource;
+    public AudioClip sound;
+
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -28,6 +32,7 @@ public class PipePlacement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
     {
         Debug.Log("OnEndDrag");
         transform.position = origin;
+        audioSource.PlayOneShot(sound);   // sound for placement pipes
     }
 
     private Vector3 MouseWorldPosition()
