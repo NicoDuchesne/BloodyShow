@@ -32,14 +32,14 @@ public class BloodMovement : MonoBehaviour
                  if (pipes.transform.parent.gameObject.GetComponent<RotateValve>() != null)
                  {
                    countValve++;
-                   ValveChengement valveChengement = pipes.GetComponentInChildren<ValveChengement>();
-                   valveChengement.valide++;
-                   valveChengement.Changemennt();
+                   //code pour  changer les sprites
+                   //ValveChengement valveChengement = pipes.GetComponentInChildren<ValveChengement>();
+                   //valveChengement.valide++;
+                   //valveChengement.Changemennt();
                  }
                  if (pipes.transform.parent.gameObject.name.Equals("End"))
                  {
                    isArrived = true;
-                   //gameObject.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
                    jaugeBlood.GameManageBloodJauge();
                  }
                  targetPosition = pipes.transform.position;

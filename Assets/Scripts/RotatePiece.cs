@@ -11,7 +11,7 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
     [SerializeField] private GameObject[] prefabs;
     [SerializeField] private GameObject[] prefabsLine;
 
-    private int counter = 0;
+    public int counter = 0;
     private int rotation = 0;
 
 
@@ -47,7 +47,8 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
         }
 
         int index = 0;
-        if (prefab.TryGetComponent<PipeLine>(out PipeLine p)) {
+        PipeLine p = prefab.GetComponent<PipeLine>();
+        if (p.isLine) {
             
             foreach (GameObject child in prefabsLine)
             {
@@ -199,7 +200,6 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
                 }
             }
         }
-        Debug.Log("nuuuuuuuuuuuuuuuuuuuuul");
         return null;
     }
 }

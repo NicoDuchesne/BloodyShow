@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9004874338767808198}
   - component: {fileID: 3137508111502467322}
   - component: {fileID: 584598843847825989}
+  - component: {fileID: 4684062757361775155}
   m_Layer: 0
   m_Name: prefabPipe5
   m_TagString: Untagged
@@ -224,6 +225,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &4684062757361775155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862702018427267900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3de6c13925cfa44d8baf63f88bdcb19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLine: 0
+  orignialSprite: {fileID: 21300000, guid: 7e5ab78b07f45514d921556bbac31367, type: 3}
+  rotatedSprite: {fileID: 21300000, guid: 4b78e5fb0e4044c40b4d8ed0aac5e836, type: 3}
 --- !u!1 &2137749111961405486
 GameObject:
   m_ObjectHideFlags: 0

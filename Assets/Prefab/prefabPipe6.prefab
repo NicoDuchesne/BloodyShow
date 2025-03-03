@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 7472524725393203851}
   - component: {fileID: 4404065889941652365}
   - component: {fileID: 675076557289350107}
+  - component: {fileID: 8866019247079675668}
   m_Layer: 0
   m_Name: prefabPipe6
   m_TagString: Untagged
@@ -483,3 +484,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.35881338, y: 0.08963683}
   m_EdgeRadius: 0
+--- !u!114 &8866019247079675668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980812722734435117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3de6c13925cfa44d8baf63f88bdcb19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLine: 0
+  orignialSprite: {fileID: 21300000, guid: a31afb8d9a5f9634db47d59aec99d773, type: 3}
+  rotatedSprite: {fileID: 21300000, guid: 4aa2ee852feb1e04b90a0468685fafa0, type: 3}

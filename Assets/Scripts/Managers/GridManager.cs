@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class GridManager : MonoBehaviour
 {
@@ -90,7 +91,15 @@ public class GridManager : MonoBehaviour
                     //pipePlaceholder.actualPrefab = newPrefab;
 
                     pipe.GetComponent<SpriteRenderer>().size = gridSize;
-                    rotatePiece.UpdateSprite();
+                    if (rotatePiece.counter % 4 == 0)
+                    {
+                        pipe.GetComponent<SpriteRenderer>().sprite = pipe.GetComponent<PipeLine>().orignialSprite;
+                    }
+                    else
+                    {
+                        pipe.GetComponent<SpriteRenderer>().sprite = pipe.GetComponent<PipeLine>().rotatedSprite;
+                    }
+
 
                     BoxCollider2D[] childColliders = pipe.GetComponentsInChildren<BoxCollider2D>();
                     foreach (BoxCollider2D col in childColliders)
@@ -144,6 +153,14 @@ public class GridManager : MonoBehaviour
                     pipePlaceholder.actualPrefab = newPrefab;
 
                     pipe.GetComponent<SpriteRenderer>().size = gridSize;
+                    if (rotatePiece.counter % 4 == 0)
+                    {
+                        pipe.GetComponent<SpriteRenderer>().sprite = pipe.GetComponent<PipeLine>().orignialSprite;
+                    }
+                    else
+                    {
+                        pipe.GetComponent<SpriteRenderer>().sprite = pipe.GetComponent<PipeLine>().rotatedSprite;
+                    }
 
                     BoxCollider2D[] childColliders = pipe.GetComponentsInChildren<BoxCollider2D>();
                     foreach (BoxCollider2D col in childColliders)
