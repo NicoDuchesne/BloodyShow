@@ -2073,10 +2073,10 @@ MonoBehaviour:
   blood1Here: 0
   blood2Here: 0
   blood3Here: 0
-  stade1: 50
+  stade1: 100
   stade2: 100
   stade3: 100
-  fillSpeed: 28
+  fillSpeed: 55
   audioSource: {fileID: 577618734}
   sound: {fileID: 8300000, guid: 74079eb87d9348b4e9944d746dc4250c, type: 3}
 --- !u!1 &296407066
@@ -10912,7 +10912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f903be6f84674174a8eae7d9f17711f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterDisplay: {fileID: 0}
+  counterDisplay: {fileID: 270195689}
   prefabs:
   - {fileID: 8192154047237010300, guid: 23d5f77ca557e83448ce2723c6786b2f, type: 3}
   - {fileID: 8311671357435707846, guid: a90bdf245c8fa9240823615013c9b780, type: 3}
@@ -11533,11 +11533,11 @@ RectTransform:
   - {fileID: 365243180}
   - {fileID: 1972384785}
   - {fileID: 964785754}
-  - {fileID: 781662025}
   - {fileID: 235421448}
   - {fileID: 614197834}
   - {fileID: 1899186251}
   - {fileID: 1709414154}
+  - {fileID: 781662025}
   - {fileID: 510781673}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
