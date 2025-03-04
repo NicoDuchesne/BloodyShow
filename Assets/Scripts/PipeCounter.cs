@@ -29,7 +29,7 @@ public class PipeCounter : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Niveau_TUTO_0")
+        if (scene.name == "Niveau1")
         {
             if (counter > 0)
             {
