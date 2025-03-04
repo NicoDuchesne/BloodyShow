@@ -1,8 +1,5 @@
-using Codice.Client.BaseCommands;
-using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
 public class GridManager : MonoBehaviour

@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using GooglePlayGames;
-using GooglePlayGames.BasicApi;
 using UnityEngine;
 
 public class AchievementManager : MonoBehaviour
 {
-    public GameObject on;
-    public GameObject off;
+    //public GameObject on;
+    //public GameObject off;
 
 
     void Start()
@@ -16,20 +13,25 @@ public class AchievementManager : MonoBehaviour
         PlayGamesPlatform.Activate();
     }
 
+    //public void ShowAchievements()
+    //{
+    //    if (Social.localUser.authenticated)
+    //    {
+    //        Social.ShowAchievementsUI();
+    //        on.SetActive(true);
+    //        off.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Utilisateur non connecté !");
+    //        on.SetActive(false);
+    //        off.SetActive(true);
+    //    }
+    //}
+
     public void ShowAchievements()
     {
-        if (Social.localUser.authenticated)
-        {
             Social.ShowAchievementsUI();
-            on.SetActive(true);
-            off.SetActive(false);
-        }
-        else
-        {
-            Debug.Log("Utilisateur non connecté !");
-            on.SetActive(false);
-            off.SetActive(true);
-        }
     }
 
     public void UnlockTutorialAchievement()
