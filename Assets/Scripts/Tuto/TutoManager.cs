@@ -6,20 +6,19 @@ public class TutoManager : MonoBehaviour
     public GameObject dialogue1;
     public static bool OnActiveTuto1 = true;
     public static bool OnActiveTuto2 = false;
-    public static bool OnActiveTuto3 = true;
-    public static bool OnActiveTuto4 = true;
-    public static bool OnActiveTuto5 = false;
-
-    public GameObject dialogue3;
-    public GameObject dialogue4;
-    public GameObject dialogue5;
-
-
 
     public Animator anim;
     public Animator animHand;
-    public Animator animPoche;
-    public Animator animTuto4;
+
+    //TUTO 2
+    public GameObject dialogue2;
+    public static bool OnActiveTuto3 = true;
+    public GameObject anim2;
+
+    //TUTO 3
+    public GameObject dialogue3;
+    public static bool OnActiveTuto4 = true;
+    public GameObject anim3;
 
 
     void Update()
@@ -36,7 +35,7 @@ public class TutoManager : MonoBehaviour
             else
             {
                 OFFAnimTuto1();
-                
+
             }
 
             if (OnActiveTuto2)
@@ -49,7 +48,7 @@ public class TutoManager : MonoBehaviour
             }
         }
 
-        if (scene.name == "Niveau_TUTO_1")
+        if (scene.name == "Niveau2")
         {
             if (OnActiveTuto3)
             {
@@ -58,22 +57,11 @@ public class TutoManager : MonoBehaviour
             else
             {
                 OFFAnimTuto3();
-                OnActiveTuto4 = true;
-            }
-
-            if (OnActiveTuto4)
-            {
-                OnAnimTuto4();
-            }
-            else
-            {
-                OFFAnimTuto4();
-                //SceneManager.LoadScene(tutoSuivant);
 
             }
         }
-
-        if (scene.name == "Niveau_TUTO_2")
+        
+        if (scene.name == "Niveau3")
         {
             if (OnActiveTuto4)
             {
@@ -82,21 +70,14 @@ public class TutoManager : MonoBehaviour
             else
             {
                 OFFAnimTuto4();
-            }
 
-            if (OnActiveTuto5)
-            {
-                OnAnimTuto5();
-            }
-            else
-            {
-                OFFAnimTuto5();
             }
         }
-}
+    }
+    
 
-//TUTO 1
-void OnAnimTuto1()
+    //TUTO 1
+    void OnAnimTuto1()
     {
         anim.SetBool("IsValide", true);
     }
@@ -106,8 +87,6 @@ void OnAnimTuto1()
         anim.SetBool("IsValide", false);
         dialogue1.SetActive(false);
     }
-
-    //TUTO 2
 
     void OnAnimTuto2()
     {
@@ -119,42 +98,27 @@ void OnAnimTuto1()
         animHand.SetBool("IsTuto2", false);
     }
 
-    //TUTO 3  AUTRES SCENE
-
+    //tuto 2
     void OnAnimTuto3()
     {
-        animPoche.SetBool("IsOn", true);
+        
     }
 
     void OFFAnimTuto3()
     {
-        animPoche.SetBool("IsOn", false);
-        dialogue3.SetActive(false);
+        anim2.SetActive(false);
+        dialogue2.SetActive(false);
     }
 
-    //TUTO 4
-
+    //tuto 3
     void OnAnimTuto4()
     {
-        animTuto4.SetBool("IsOn", true);
-        dialogue4.SetActive(true);
+
     }
 
     void OFFAnimTuto4()
     {
-        animTuto4.SetBool("IsOn", false);
-        dialogue4.SetActive(false);
-    }
-
-    //TUTO 5
-
-    void OnAnimTuto5()
-    {
-        dialogue5.SetActive(true);
-    }
-
-    void OFFAnimTuto5()
-    {
-        dialogue5.SetActive(false);
+        anim3.SetActive(false);
+        dialogue3.SetActive(false);
     }
 }

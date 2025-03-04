@@ -33,7 +33,7 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
                 if (counter > 0)
                 {
                     Debug.Log("TUTO 4 OFF");
-                    TutoManager.OnActiveTuto4 = false;
+                    //TutoManager.OnActiveTuto4 = false;
                 }
             }
         }
