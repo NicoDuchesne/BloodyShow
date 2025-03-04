@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 3255799}
   - component: {fileID: 3255798}
   m_Layer: 5
-  m_Name: prefabEmptyTile (5)
+  m_Name: prefabEmptyTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 88362901}
   - component: {fileID: 88362900}
   m_Layer: 5
-  m_Name: prefabEmptyTile (2)
+  m_Name: prefabEmptyTile2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9071,7 +9071,7 @@ GameObject:
   - component: {fileID: 1318335439}
   - component: {fileID: 1318335438}
   m_Layer: 5
-  m_Name: prefabEmptyTile (3)
+  m_Name: prefabEmptyTile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10959,7 +10959,7 @@ GameObject:
   - component: {fileID: 1850501523}
   - component: {fileID: 1850501522}
   m_Layer: 5
-  m_Name: prefabEmptyTile (4)
+  m_Name: prefabEmptyTile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12753,7 +12753,7 @@ GameObject:
   - component: {fileID: 6099252911262982473}
   - component: {fileID: 7620116096967869427}
   m_Layer: 5
-  m_Name: prefabValveTile
+  m_Name: prefabValveTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13306,7 +13306,7 @@ GameObject:
   - component: {fileID: 8501689633902389769}
   - component: {fileID: 4905263021971593384}
   m_Layer: 5
-  m_Name: prefabEmptyTile
+  m_Name: prefabEmptyTile1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
