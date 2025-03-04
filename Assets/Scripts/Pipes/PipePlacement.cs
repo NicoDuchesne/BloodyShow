@@ -50,6 +50,7 @@ public class PipePlacement : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
         audioSource.PlayOneShot(sound);   // sound for placement pipes
 
         RemoveManager.Instance.DisableZones();
+        gameObject.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
     }
 
     private Vector3 MouseWorldPosition()

@@ -18269,7 +18269,7 @@ MonoBehaviour:
   _speed: 10
   isMoving: 0
   isArrived: 0
-  maxInactivTime: 1.5
+  maxInactivTime: 1
 --- !u!82 &8004563203996226398
 AudioSource:
   m_ObjectHideFlags: 0

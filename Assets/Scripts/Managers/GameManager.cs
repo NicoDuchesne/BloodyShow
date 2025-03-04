@@ -66,8 +66,8 @@ public class GameManager : MonoBehaviour
             destroyed = false;
             if (won && counter < turns)
             {
-                gridManager.NextPhase();
-                StartBlood();
+                StartCoroutine(gridManager.NextPhase());
+                
             } else if(won && counter == turns && gridManager.CheckWinCondition())
             {
                 blockScreen.transform.GetChild(0).gameObject.SetActive(false);
