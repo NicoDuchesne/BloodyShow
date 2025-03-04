@@ -12,6 +12,7 @@ public class PlayGameManager : MonoBehaviour
 
     public void SignIn()
     {
+        PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
         Debug.Log("Authentification en cours...");
     }
