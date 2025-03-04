@@ -4,13 +4,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class GridManager : MonoBehaviour
 {
     [SerializeField] private GameObject grid;
     [SerializeField] public GameObject end;
     private bool isInitialized = false;
+    private bool rotatePieces = false;
     private Vector2 gridSize;
+    private float rotateWait = 1.5f;
 
     public void Awake()
     {
@@ -48,11 +51,43 @@ public class GridManager : MonoBehaviour
     {
         if (!isInitialized)
         {
+            gridSize = grid.GetComponent<GridLayoutGroup>().cellSize;
             StartCoroutine(Initialize());
         }
 
-        gridSize = grid.GetComponent<GridLayoutGroup>().cellSize;
+        if(rotatePieces)
+        {
+            foreach (Transform child in grid.transform)
+            {
+                if(child.gameObject.GetComponent<IRotatable>().GetRotation() != 0)
+                {
+                    IRotatable rotate = child.gameObject.GetComponent<IRotatable>();
+                    float ratio = rotate.GetRotation() / rotateWait;
+
+                    GameObject go = null;
+                    foreach (Transform grandChild in child)
+                    {
+                        if (grandChild.gameObject.name.Length >= 10)
+                        {
+                            string substring = grandChild.gameObject.name.Substring(0, 10);
+                            if (substring.Equals("prefabPipe") || substring.Equals("prefabValv"))
+                            {
+                                go = grandChild.gameObject;
+                            }
+                        }
+                    }
+
+                    //PAS DE CLAMP !!!!
+                    Vector3 rot = go.transform.rotation.eulerAngles;
+                    rot = new Vector3(rot.x, rot.y, rot.z + ratio * Time.deltaTime);
+                    go.transform.rotation = Quaternion.Euler(rot);
+                }
+            }
+        }
+
+        
     }
+
 
     public void StartingPhase()
     {
@@ -116,9 +151,13 @@ public class GridManager : MonoBehaviour
         }
     }
 
-    public void NextPhase()
+    public IEnumerator NextPhase()
     {
         resetEnd();
+
+        rotatePieces = true;
+        yield return new WaitForSeconds(rotateWait);
+        rotatePieces = false;
 
         foreach (Transform child in grid.transform)
         {
@@ -176,6 +215,8 @@ public class GridManager : MonoBehaviour
                 }
             }
         }
+
+        GameManager.Instance.StartBlood();
     }
 
     IEnumerator Initialize()
