@@ -39,7 +39,7 @@ public class PipeCounter : MonoBehaviour
             } 
         }
 
-        if (scene.name == "Niveau_TUTO_1")
+        if (scene.name == "Niveau2")
         {
             if (counter > 0)
             {
