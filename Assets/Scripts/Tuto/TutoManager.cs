@@ -21,14 +21,13 @@ public class TutoManager : MonoBehaviour
     public Animator animPoche;
     public Animator animTuto4;
 
-    //public string tutoSuivant;
 
     void Update()
     {
 
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Niveau_TUTO_0")
+        if (scene.name == "Niveau1")
         {
             if (OnActiveTuto1)
             {
@@ -37,7 +36,7 @@ public class TutoManager : MonoBehaviour
             else
             {
                 OFFAnimTuto1();
-                //SceneManager.LoadScene(tutoSuivant);
+                
             }
 
             if (OnActiveTuto2)
