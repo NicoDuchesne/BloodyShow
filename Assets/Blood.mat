@@ -21,12 +21,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blood
-  m_Shader: {fileID: -6465566751694194690, guid: 3f6d3d79a84b8d148a6a8edccb4c8840, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 37d880735dfcf5c41a3d839849d8b530, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _AXIS_HORIZONTAL
-  - _MODE_LINEAR
+  - _CORNER_BUTTOM_RIGHT
+  - _MODE_RADIAL
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -61,11 +62,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _AXIS: 0
+    - _CORNER: 2
     - _Inverse: 0
-    - _MODE: 0
+    - _MODE: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Value: 1
+    - _Value: 0.36
     m_Colors:
     - _Pivot: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
