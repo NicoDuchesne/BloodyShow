@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
                 if (scene.name == "Niveau_TUTO_2")
                 {
-                    TutoManager.OnActiveTuto5 = true;
+                    //TutoManager.OnActiveTuto5 = true;
                 }
             }
             else

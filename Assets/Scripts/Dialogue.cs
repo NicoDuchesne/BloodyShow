@@ -64,8 +64,11 @@ public class Dialogue : MonoBehaviour
         {
             StopAllCoroutines();
             textComponent.text = lines[index];
-            Debug.Log("TUTO 2 ON");
+            //Pour tuto1
             TutoManager.OnActiveTuto2 = true;
+            //pour tuto2
+            TutoManager.OnActiveTuto3 = true;
+
         }
         //}
     }
