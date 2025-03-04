@@ -28,12 +28,14 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
 
             Scene scene = SceneManager.GetActiveScene();
 
-            if (scene.name == "Niveau_TUTO_2")
+            if (scene.name == "Niveau3")
             {
-                if (counter > 0)
+                Debug.Log(counter);
+
+                if (counter == 4)
                 {
                     Debug.Log("TUTO 4 OFF");
-                    //TutoManager.OnActiveTuto4 = false;
+                    TutoManager.OnActiveTuto4 = false;
                 }
             }
         }

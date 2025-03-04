@@ -20,6 +20,11 @@ public class TutoManager : MonoBehaviour
     public static bool OnActiveTuto4 = true;
     public GameObject anim3;
 
+    //TUTO 4
+    public GameObject dialogue4;
+    public GameObject dialogue5;
+    public static bool OnActiveTuto5 = true;
+
 
     void Update()
     {
@@ -73,6 +78,19 @@ public class TutoManager : MonoBehaviour
 
             }
         }
+
+        if (scene.name == "Niveau4")
+        {
+            if (OnActiveTuto5)
+            {
+                OnAnimTuto5();
+            }
+            else
+            {
+                OFFAnimTuto5();
+
+            }
+        }
     }
     
 
@@ -113,12 +131,26 @@ public class TutoManager : MonoBehaviour
     //tuto 3
     void OnAnimTuto4()
     {
-
+        dialogue3.SetActive(true);
+        anim3.SetActive(true);
     }
 
     void OFFAnimTuto4()
     {
-        anim3.SetActive(false);
         dialogue3.SetActive(false);
+        anim3.SetActive(false);
+    }
+
+    //tuto 4
+    void OnAnimTuto5()
+    {
+        dialogue4.SetActive(true);
+        dialogue5.SetActive(false);
+    }
+
+    void OFFAnimTuto5()
+    {
+        dialogue4.SetActive(false);
+        dialogue5.SetActive(true);
     }
 }
