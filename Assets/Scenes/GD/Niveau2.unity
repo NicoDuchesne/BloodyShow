@@ -9758,7 +9758,7 @@ MonoBehaviour:
   stade1: 100
   stade2: 100
   stade3: 100
-  fillSpeed: 30
+  fillSpeed: 55
   audioSource: {fileID: 0}
   sound: {fileID: 0}
 --- !u!114 &1457303674

@@ -10178,7 +10178,7 @@ MonoBehaviour:
   stade1: 100
   stade2: 100
   stade3: 100
-  fillSpeed: 30
+  fillSpeed: 55
   audioSource: {fileID: 0}
   sound: {fileID: 0}
 --- !u!114 &1457303674
@@ -13790,7 +13790,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 2
