@@ -47,10 +47,14 @@ public class PipeCounter : MonoBehaviour
                 TutoManager.OnActiveTuto3 = false;
             }
         }
-        //if(counter > 0)
-        //{
-        //    etape1.OnActive1 = false;
-        //}
+
+        if (scene.name == "Niveau4")
+        {
+            if (counter > 1)
+            {
+                TutoManager.OnActiveTuto5 = false;
+            }
+        }
     }
 
     private void UpdateDisplay()
