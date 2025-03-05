@@ -205,6 +205,23 @@ public class GameManager : MonoBehaviour
         }
 
         saiveData.SaveToJson(mySave);
+
+        CheckAllStars();
+    }
+
+    private void CheckAllStars()
+    {
+        saive mySave = saiveData.ReturnSave();
+
+        int sum = mySave.niveau1Star + mySave.niveau2Star + mySave.niveau3Star + mySave.niveau4Star
+            + mySave.niveau5Star + mySave.niveau6Star + mySave.niveau7Star + mySave.niveau8Star
+            + mySave.niveau9Star + mySave.niveau10Star + mySave.niveau11Star + mySave.niveau12Star
+            + mySave.niveau13Star + mySave.niveau14Star + mySave.niveau15Star;
+
+        if (sum >= 45)
+        {
+            AchievementManager.UnlockTutorial7Achievement();
+        }
     }
 
     void CheckSceneAddAchievements()

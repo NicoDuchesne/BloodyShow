@@ -8564,7 +8564,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046747464}
         m_TargetAssemblyTypeName: playescenes, NewAssembly
-        m_MethodName: LoadSceneNiveau3
+        m_MethodName: LoadSceneNiveau15
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8620,7 +8620,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046747464}
         m_TargetAssemblyTypeName: playescenes, NewAssembly
-        m_MethodName: LoadSceneNiveau3
+        m_MethodName: LoadSceneNiveau14
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8676,7 +8676,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046747464}
         m_TargetAssemblyTypeName: playescenes, NewAssembly
-        m_MethodName: LoadSceneNiveau3
+        m_MethodName: LoadSceneNiveau13
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8732,7 +8732,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046747464}
         m_TargetAssemblyTypeName: playescenes, NewAssembly
-        m_MethodName: LoadSceneNiveau3
+        m_MethodName: LoadSceneNiveau12
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8788,7 +8788,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2046747464}
         m_TargetAssemblyTypeName: playescenes, NewAssembly
-        m_MethodName: LoadSceneNiveau3
+        m_MethodName: LoadSceneNiveau11
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

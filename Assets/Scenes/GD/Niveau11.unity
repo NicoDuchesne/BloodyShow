@@ -5190,8 +5190,8 @@ RectTransform:
   m_Children:
   - {fileID: 562961491}
   - {fileID: 1014171892}
-  - {fileID: 994871470}
   - {fileID: 315911147}
+  - {fileID: 994871470}
   - {fileID: 1299841871}
   - {fileID: 633626531}
   - {fileID: 360155342}
@@ -10741,7 +10741,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09d7d98dde047294ab52b206da677459, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15662,7 +15662,7 @@ MonoBehaviour:
   - {fileID: 360155339}
   - {fileID: 24526509}
   - {fileID: 1014171889}
-  starWin: {fileID: 21300000, guid: 09d7d98dde047294ab52b206da677459, type: 3}
+  starWin: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
   saiveData: {fileID: 2820678335168057428, guid: 08d199971f4cc1e468c9e3de57f4292e, type: 3}
   destroyed: 0
   won: 0
