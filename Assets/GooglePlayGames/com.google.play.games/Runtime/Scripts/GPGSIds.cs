@@ -24,7 +24,14 @@
 
 public static class GPGSIds
 {
-        public const string achievement_complete_the_tutorial = "CgkIrdDX2dEZEAIQAA"; // <GPGSID>
+        public const string achievement_get_the_hang_of_it = "CgkIrdDX2dEZEAIQBQ"; // <GPGSID> 3 
+        public const string achievement_youre_a_smart_one = "CgkIrdDX2dEZEAIQBg"; // <GPGSID> 5 
+        public const string achievement_final_act__outcome = "CgkIrdDX2dEZEAIQBA"; // <GPGSID> 6
+        public const string achievement_its_showtime = "CgkIrdDX2dEZEAIQAA"; // <GPGSID>   1
+        public const string achievement_second_act__plot_point = "CgkIrdDX2dEZEAIQAw"; // <GPGSID> 4 
+        public const string achievement_star_psycho = "CgkIrdDX2dEZEAIQBw"; // <GPGSID> 7
+        public const string achievement_catppetite = "CgkIrdDX2dEZEAIQCA"; // <GPGSID> 8
+        public const string achievement_first_act__exposition = "CgkIrdDX2dEZEAIQAg"; // <GPGSID> 2
 
 }
 
