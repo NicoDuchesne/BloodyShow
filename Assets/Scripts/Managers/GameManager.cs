@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
     {
         int pipeCount = int.Parse(GameObject.Find("PipeCounter").GetComponent<TextMeshProUGUI>().text);
         int stars = GetStars(pipeCount);
-        SaveStars(stars);
+        UpdateSaves(stars);
 
 
         yield return new WaitForSeconds(0.3f);
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SaveStars(int stars)
+    public void UpdateSaves(int stars)
     {
         string actualScene = SceneManager.GetActiveScene().name;
 
@@ -142,45 +142,59 @@ public class GameManager : MonoBehaviour
         {
             case "Niveau1":
                 if(mySave.niveau1Star < stars) { mySave.niveau1Star = stars; }
+                mySave.niveau2 = true;
                 break;
             case "Niveau2":
                 if (mySave.niveau2Star < stars) { mySave.niveau2Star = stars; }
+                mySave.niveau3 = true;
                 break;
             case "Niveau3":
                 if (mySave.niveau3Star < stars) { mySave.niveau3Star = stars; }
+                mySave.niveau4 = true;
                 break;
             case "Niveau4":
                 if (mySave.niveau4Star < stars) { mySave.niveau4Star = stars; }
+                mySave.niveau5 = true;
                 break;
             case "Niveau5":
                 if (mySave.niveau5Star < stars) { mySave.niveau5Star = stars; }
+                mySave.niveau6 = true;
                 break;
             case "Niveau6":
                 if (mySave.niveau6Star < stars) { mySave.niveau6Star = stars; }
+                mySave.niveau7 = true;
                 break;
             case "Niveau7":
                 if (mySave.niveau7Star < stars) { mySave.niveau7Star = stars; }
+                mySave.niveau8 = true;
                 break;
             case "Niveau8":
                 if (mySave.niveau8Star < stars) { mySave.niveau8Star = stars; }
+                mySave.niveau9 = true;
                 break;
             case "Niveau9":
                 if (mySave.niveau9Star < stars) { mySave.niveau9Star = stars; }
+                mySave.niveau10 = true;
                 break;
             case "Niveau10":
                 if (mySave.niveau10Star < stars) { mySave.niveau10Star = stars; }
+                mySave.niveau11 = true;
                 break;
             case "Niveau11":
                 if (mySave.niveau11Star < stars) { mySave.niveau11Star = stars; }
+                mySave.niveau12 = true;
                 break;
             case "Niveau12":
                 if (mySave.niveau12Star < stars) { mySave.niveau12Star = stars; }
+                mySave.niveau13 = true;
                 break;
             case "Niveau13":
                 if (mySave.niveau13Star < stars) { mySave.niveau13Star = stars; }
+                mySave.niveau14 = true;
                 break;
             case "Niveau14":
                 if (mySave.niveau14Star < stars) { mySave.niveau14Star = stars; }
+                mySave.niveau15 = true;
                 break;
             case "Niveau15":
                 if (mySave.niveau15Star < stars) { mySave.niveau15Star = stars; }

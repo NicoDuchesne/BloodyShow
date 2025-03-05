@@ -4199,7 +4199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 1886011706}
-  end: {fileID: 709869460}
+  end: {fileID: 1662430589}
 --- !u!4 &569951033
 Transform:
   m_ObjectHideFlags: 0
@@ -10732,6 +10732,7 @@ MonoBehaviour:
   - {fileID: 24526509}
   - {fileID: 1014171889}
   starWin: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
+  saiveData: {fileID: 2820678335168057428, guid: 08d199971f4cc1e468c9e3de57f4292e, type: 3}
   destroyed: 0
   won: 0
 --- !u!114 &1457303673
