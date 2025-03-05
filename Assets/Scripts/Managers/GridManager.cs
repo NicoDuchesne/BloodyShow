@@ -8,6 +8,7 @@ public class GridManager : MonoBehaviour
 {
     [SerializeField] private GameObject grid;
     [SerializeField] public GameObject end;
+    
     private bool isInitialized = false;
     private bool rotatePieces = false;
     private Vector2 gridSize;
@@ -235,14 +236,17 @@ public class GridManager : MonoBehaviour
 
     private void resetEnd()
     {
-        BoxCollider2D[] childColliders = end.GetComponentsInChildren<BoxCollider2D>();
-        foreach (BoxCollider2D col in childColliders)
-        {
-            col.enabled = true;
-        }
-        end.tag = "Untagged";
-        end.transform.GetChild(0).GetChild(0).gameObject.tag = "PipeNO";
-        end.transform.GetChild(0).gameObject.tag = "Pipe";
+       
+            BoxCollider2D[] childColliders = end.GetComponentsInChildren<BoxCollider2D>();
+            foreach (BoxCollider2D col in childColliders)
+            {
+                col.enabled = true;
+            }
+            end.tag = "Untagged";
+            end.transform.GetChild(0).GetChild(0).gameObject.tag = "PipeNO";
+            end.transform.GetChild(0).gameObject.tag = "Pipe";
+        
+        
     }
 
     public void CleanTiles(Transform parent)
