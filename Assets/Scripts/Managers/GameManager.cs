@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
                 victoryScreen.transform.GetChild(0).gameObject.SetActive(true);
                 Debug.Log("le jeu est gagné");
                 StartCoroutine(ManageStars());
-                
+                CheckSceneAddAchievements();
             }
             else
             {
@@ -111,8 +111,32 @@ public class GameManager : MonoBehaviour
         {
             starsGO[2].GetComponent<Image>().sprite = starWin;
         }
-
-        
     }
 
+    void CheckSceneAddAchievements()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Niveau4")
+        {
+            AchievementManager.UnlockTutorial1Achievement();
+        }
+        if (scene.name == "Niveau5")
+        {
+            AchievementManager.UnlockTutorial2Achievement();
+        }
+        if (scene.name == "Niveau9")
+        {
+            AchievementManager.UnlockTutorial3Achievement();
+        }
+        if (scene.name == "Niveau10")
+        {
+            AchievementManager.UnlockTutorial4Achievement();
+        }
+        if (scene.name == "Niveau15")
+        {
+            AchievementManager.UnlockTutorial5Achievement();
+            AchievementManager.UnlockTutorial6Achievement();
+        }
+    }
 }
