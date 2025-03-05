@@ -16383,6 +16383,7 @@ MonoBehaviour:
   - "It will rotate after the first bag is completely emptied to one of the following
     rotational values: 90, 180, or 270\xB0. Press it a fourth time to cancel its
     rotation. "
+  - 'WARNING: ROTATIONS ARE CLOCKWISE ONLY'
   textSpeed: 0.1
 --- !u!4 &2079496353
 Transform:
