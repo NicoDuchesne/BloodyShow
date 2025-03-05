@@ -1008,7 +1008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &135922953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2685,7 +2685,10 @@ MonoBehaviour:
   lines:
   - A strange object is present in the game; it seems to be called a valve. It's
     imperative to go through it, or something bad might happen...
-  textSpeed: 0.1
+  textSpeed: 0.05
+  dialogue1: {fileID: 0}
+  blockScreen: {fileID: 135922952}
+  dialogue2: {fileID: 894331199}
 --- !u!4 &377221067
 Transform:
   m_ObjectHideFlags: 0
@@ -4625,7 +4628,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.5714302}
+  m_margin: {x: -53.54947, y: -7.649929, z: -54.505707, w: -17.783768}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6877,8 +6880,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000009536743, y: -258}
-  m_SizeDelta: {x: 598.4, y: 130.24}
+  m_AnchoredPosition: {x: -13, y: -281.01}
+  m_SizeDelta: {x: 715.85, y: 155.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894331201
 MonoBehaviour:
@@ -12731,7 +12734,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 276.9, y: 105.17}
+  m_AnchoredPosition: {x: 337.1, y: 127.2}
   m_SizeDelta: {x: 124.51, y: 210.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2003522847
@@ -12976,7 +12979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000010954, y: -67.5}
+  m_AnchoredPosition: {x: 0.000010954, y: -76.1}
   m_SizeDelta: {x: 49.38, y: 46.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088944835

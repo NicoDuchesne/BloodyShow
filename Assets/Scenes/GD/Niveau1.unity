@@ -1008,7 +1008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &135922953
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3091,8 +3091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444092, y: -232}
-  m_SizeDelta: {x: 500, y: 115}
+  m_AnchoredPosition: {x: 1.8724, y: -263}
+  m_SizeDelta: {x: 655.51, y: 150.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &404846431
 MonoBehaviour:
@@ -5275,7 +5275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000010967255, y: -59.2}
+  m_AnchoredPosition: {x: 0.000010967255, y: -74.3}
   m_SizeDelta: {x: 49.38, y: 46.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702178780
@@ -9823,7 +9823,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -0.5714302}
+  m_margin: {x: -81.304886, y: -14.24929, z: -21.793076, w: -15.658943}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9853,7 +9853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.9, y: -0.66}
+  m_AnchoredPosition: {x: 3.4, y: -0.66}
   m_SizeDelta: {x: 458.92, y: 98.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1340693456
@@ -11621,7 +11621,9 @@ MonoBehaviour:
   - This clown has kindly agreed to give us his blood.
   - Help me by connecting the bag to the empty gauge to fill it up!
   - 'You know what they say: ''Healthy blood in a healthy body!'
-  textSpeed: 0.1
+  textSpeed: 0.05
+  dialogue1: {fileID: 404846429}
+  blockScreen: {fileID: 135922952}
 --- !u!4 &1714509520
 Transform:
   m_ObjectHideFlags: 0
@@ -11984,7 +11986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 236.4, y: 101.4}
+  m_AnchoredPosition: {x: 306.3, y: 118.6}
   m_SizeDelta: {x: 102.58, y: 173.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808618265
