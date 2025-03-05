@@ -22,7 +22,6 @@ public class TutoManager : MonoBehaviour
 
     //TUTO 4
     public GameObject dialogue4;
-    public GameObject dialogue5;
     public static bool OnActiveTuto5 = true;
 
 
@@ -103,7 +102,6 @@ public class TutoManager : MonoBehaviour
     void OFFAnimTuto1()
     {
         anim.SetBool("IsValide", false);
-        dialogue1.SetActive(false);
     }
 
     void OnAnimTuto2()
@@ -125,32 +123,27 @@ public class TutoManager : MonoBehaviour
     void OFFAnimTuto3()
     {
         anim2.SetActive(false);
-        dialogue2.SetActive(false);
     }
 
     //tuto 3
     void OnAnimTuto4()
     {
-        dialogue3.SetActive(true);
         anim3.SetActive(true);
     }
 
     void OFFAnimTuto4()
     {
-        dialogue3.SetActive(false);
         anim3.SetActive(false);
     }
 
     //tuto 4
     void OnAnimTuto5()
     {
-        dialogue4.SetActive(true);
-        dialogue5.SetActive(false);
+        //dialogue4.SetActive(true);
     }
 
     void OFFAnimTuto5()
     {
-        dialogue4.SetActive(false);
-        dialogue5.SetActive(true);
+        //dialogue4.SetActive(false);
     }
 }
