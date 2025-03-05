@@ -2408,7 +2408,7 @@ MonoBehaviour:
   blood1Here: 0
   blood2Here: 0
   blood3Here: 0
-  stade1: 100
+  stade1: 50
   stade2: 100
   stade3: 100
   fillSpeed: 55
