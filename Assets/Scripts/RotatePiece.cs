@@ -32,7 +32,7 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
             {
                 Debug.Log(counter);
 
-                if (counter == 4)
+                if (counter == 1)
                 {
                     Debug.Log("TUTO 4 OFF");
                     TutoManager.OnActiveTuto4 = false;
