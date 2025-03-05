@@ -511,7 +511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09d7d98dde047294ab52b206da677459, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2832,7 +2832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09d7d98dde047294ab52b206da677459, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9281,7 +9281,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09d7d98dde047294ab52b206da677459, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12863,6 +12863,13 @@ MonoBehaviour:
   grid: {fileID: 1886011706}
   canvas: {fileID: 1952180066}
   turns: 2
+  twoStars: 10
+  threeStars: 8
+  starsGO:
+  - {fileID: 360155339}
+  - {fileID: 24526509}
+  - {fileID: 1014171889}
+  starWin: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
   destroyed: 0
   won: 0
 --- !u!114 &1457303673
@@ -13090,7 +13097,6 @@ MonoBehaviour:
   dialogue3: {fileID: 1461495295}
   anim3: {fileID: 139394653}
   dialogue4: {fileID: 0}
-  dialogue5: {fileID: 0}
 --- !u!4 &1519328729
 Transform:
   m_ObjectHideFlags: 0
@@ -16389,6 +16395,7 @@ MonoBehaviour:
   blockScreen: {fileID: 135922952}
   dialogue2: {fileID: 0}
   dialogue3: {fileID: 1461495295}
+  dialogue4: {fileID: 0}
 --- !u!4 &2079496353
 Transform:
   m_ObjectHideFlags: 0
