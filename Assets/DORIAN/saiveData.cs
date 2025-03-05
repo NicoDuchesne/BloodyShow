@@ -74,4 +74,20 @@ public class saive
     public bool niveau13;
     public bool niveau14;
     public bool niveau15;
+
+    public int niveau1Star;
+    public int niveau2Star;
+    public int niveau3Star;
+    public int niveau4Star;
+    public int niveau5Star;
+    public int niveau6Star;
+    public int niveau7Star;
+    public int niveau8Star;
+    public int niveau9Star;
+    public int niveau10Star;
+    public int niveau11Star;
+    public int niveau12Star;
+    public int niveau13Star;
+    public int niveau14Star;
+    public int niveau15Star;
 }

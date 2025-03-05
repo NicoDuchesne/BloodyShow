@@ -1,7 +1,10 @@
+using Codice.CM.Client.Differences.Graphic;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,9 +15,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject grid;
     [SerializeField] private Canvas canvas;
     [SerializeField] public int turns;
+    [SerializeField] private int twoStars;
+    [SerializeField] private int threeStars;
+    [SerializeField] private GameObject[] starsGO;
+    [SerializeField] private Sprite starWin;
 
-    public bool destroyed = false;
-    public bool won = false;
+
+    [HideInInspector]public bool destroyed = false;
+    [HideInInspector] public bool won = false;
     private int counter = 0;
 
     private static GameManager instance = null;
@@ -73,13 +81,8 @@ public class GameManager : MonoBehaviour
                 blockScreen.transform.GetChild(0).gameObject.SetActive(false);
                 victoryScreen.transform.GetChild(0).gameObject.SetActive(true);
                 Debug.Log("le jeu est gagné");
-
-                Scene scene = SceneManager.GetActiveScene();
-
-                if (scene.name == "Niveau_TUTO_2")
-                {
-                    //TutoManager.OnActiveTuto5 = true;
-                }
+                StartCoroutine(ManageStars());
+                
             }
             else
             {
@@ -88,6 +91,28 @@ public class GameManager : MonoBehaviour
                 Debug.Log("le jeu est perdu");
             }
         }
+    }
+    
+    IEnumerator ManageStars()
+    {
+        int pipeCount = int.Parse(GameObject.Find("PipeCounter").GetComponent<TextMeshProUGUI>().text);
+
+        yield return new WaitForSeconds(0.3f);
+        starsGO[0].GetComponent<Image>().sprite = starWin;
+
+        yield return new WaitForSeconds(0.3f);
+        if (pipeCount <= twoStars)
+        {
+            starsGO[1].GetComponent<Image>().sprite = starWin;
+        }
+
+        yield return new WaitForSeconds(0.3f);
+        if (pipeCount <= threeStars)
+        {
+            starsGO[2].GetComponent<Image>().sprite = starWin;
+        }
+
+        
     }
 
 }
