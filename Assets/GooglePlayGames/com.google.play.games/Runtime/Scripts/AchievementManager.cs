@@ -13,17 +13,6 @@ public class AchievementManager : MonoBehaviour
         PlayGamesPlatform.Activate();
     }
 
-
-    // public const string achievement_youre_a_smart_one = "CgkIrdDX2dEZEAIQBg"; // <GPGSID>
-    //public const string achievement_final_act__outcome = "CgkIrdDX2dEZEAIQBA"; // <GPGSID>
-    //public const string achievement_its_showtime = "CgkIrdDX2dEZEAIQAA"; // <GPGSID>
-    //public const string achievement_second_act__plot_point = "CgkIrdDX2dEZEAIQAw"; // <GPGSID>
-    //public const string achievement_star_psycho = "CgkIrdDX2dEZEAIQBw"; // <GPGSID>
-    //public const string achievement_catppetite = "CgkIrdDX2dEZEAIQCA"; // <GPGSID>
-    //public const string achievement_first_act__exposition = "CgkIrdDX2dEZEAIQAg"; // <GPGSID>
-
-
-
     public void ShowAchievements()
     {
             Social.ShowAchievementsUI();
@@ -33,7 +22,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_its_showtime, 100.0f, success =>
             {
                 if (success)
@@ -57,7 +45,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_first_act__exposition, 100.0f, success =>
             {
                 if (success)
@@ -81,7 +68,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_get_the_hang_of_it, 100.0f, success =>
             {
                 if (success)
@@ -105,7 +91,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_second_act__plot_point, 100.0f, success =>
             {
                 if (success)
@@ -129,7 +114,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_youre_a_smart_one, 100.0f, success =>
             {
                 if (success)
@@ -153,7 +137,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_final_act__outcome, 100.0f, success =>
             {
                 if (success)
@@ -177,7 +160,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_star_psycho, 100.0f, success =>
             {
                 if (success)
@@ -201,7 +183,6 @@ public class AchievementManager : MonoBehaviour
     {
         if (Social.localUser.authenticated)
         {
-            // Déverrouiller l'achievement "Complete the tutorial"
             Social.ReportProgress(GPGSIds.achievement_catppetite, 100.0f, success =>
             {
                 if (success)
