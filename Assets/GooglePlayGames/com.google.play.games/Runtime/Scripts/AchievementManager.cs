@@ -5,22 +5,7 @@ public class AchievementManager : MonoBehaviour
 {
     //public GameObject on;
     //public GameObject off;
-    //private static AchievementManager instance = null;
-    //public static AchievementManager Instance => instance;
 
-    //private void Awake()
-    //{
-    //    if (instance != null && instance != this)
-    //    {
-    //        Destroy(this.gameObject);
-    //        return;
-    //    }
-    //    else
-    //    {
-    //        instance = this;
-    //    }
-
-    //}
 
     void Start()
     {
@@ -33,7 +18,7 @@ public class AchievementManager : MonoBehaviour
             Social.ShowAchievementsUI();
     }
 
-    public static void UnlockTutorial1Achievement()
+    public void UnlockTutorial1Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -56,7 +41,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial2Achievement()
+    public void UnlockTutorial2Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -79,7 +64,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial3Achievement()
+    public void UnlockTutorial3Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -102,7 +87,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial4Achievement()
+    public void UnlockTutorial4Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -125,7 +110,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial5Achievement()
+    public void UnlockTutorial5Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -148,7 +133,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial6Achievement()
+    public void UnlockTutorial6Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -171,7 +156,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial7Achievement()
+    public void UnlockTutorial7Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -194,7 +179,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public static void UnlockTutorial8Achievement()
+    public void UnlockTutorial8Achievement()
     {
         if (Social.localUser.authenticated)
         {

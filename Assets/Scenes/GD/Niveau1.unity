@@ -10518,7 +10518,6 @@ GameObject:
   - component: {fileID: 1457303672}
   - component: {fileID: 1457303673}
   - component: {fileID: 1457303674}
-  - component: {fileID: 1457303675}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10560,10 +10559,6 @@ MonoBehaviour:
   grid: {fileID: 1886011706}
   canvas: {fileID: 1952180066}
   turns: 1
-  twoStars: 0
-  threeStars: 0
-  starsGO: []
-  starWin: {fileID: 0}
   destroyed: 0
   won: 0
 --- !u!114 &1457303673
@@ -10601,18 +10596,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rideau: {fileID: 238783781}
---- !u!114 &1457303675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457303670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e34734debf42f3478cad9a9cd35a565, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1481606614
 GameObject:
   m_ObjectHideFlags: 0
@@ -11641,9 +11624,6 @@ MonoBehaviour:
   textSpeed: 0.05
   dialogue1: {fileID: 404846429}
   blockScreen: {fileID: 135922952}
-  dialogue2: {fileID: 0}
-  dialogue3: {fileID: 0}
-  dialogue4: {fileID: 0}
 --- !u!4 &1714509520
 Transform:
   m_ObjectHideFlags: 0
@@ -13460,6 +13440,7 @@ MonoBehaviour:
   dialogue3: {fileID: 0}
   anim3: {fileID: 0}
   dialogue4: {fileID: 0}
+  dialogue5: {fileID: 0}
 --- !u!4 &1978405367
 Transform:
   m_ObjectHideFlags: 0
