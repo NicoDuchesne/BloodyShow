@@ -144,6 +144,7 @@ public class RotatePiece : MonoBehaviour, IPointerClickHandler, IRotatable
         counter--;
         UpdateCounterDisplay();
         UpdateRotation();
+        UpdateSprite();
     }
 
     public int GetCounter()
