@@ -48,6 +48,9 @@ public class CatBin : MonoBehaviour, IDropHandler
             Debug.Log("DETRUIT");
             rotation.ResetRotation();
 
+            //Easter EGG
+            AchievementManager.UnlockTutorial8Achievement();
+
 
             foreach (Transform child in eventData.pointerDrag.transform)
             {
