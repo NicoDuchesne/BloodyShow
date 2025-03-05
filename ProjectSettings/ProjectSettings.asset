@@ -42,7 +42,9 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
     duration: 2
-  - logo: {fileID: 21300000, guid: 34097775aa24e184d9b8b5e79e30ac95, type: 3}
+  - logo: {fileID: 21300000, guid: 2a2798f5577af8346bffb7906cf13fb3, type: 3}
+    duration: 2
+  - logo: {fileID: 21300000, guid: dec3a7e276e4e4d44821ecc234077328, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -270,7 +272,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/nicol/Downloads/Builds/IIMCertificate.keystore
+  AndroidKeystoreName: C:/Users/fazyk/OneDrive/Documents/2- IIM/IIMCertificate.keystore
   AndroidKeyaliasName: iimjv
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
