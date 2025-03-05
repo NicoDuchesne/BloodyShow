@@ -28,10 +28,6 @@ public class saiveData : MonoBehaviour
         string saiveData = System.IO.File.ReadAllText(filePath);
         saive = JsonUtility.FromJson<saive>(saiveData);
         Debug.Log("chargement effectuée");
-        Debug.Log(saive.niveau2);
-        //Debug.Log(saive.niveau3);
-        //Debug.Log(saive.niveau4);
-
     }
 
     public void Initilaize()

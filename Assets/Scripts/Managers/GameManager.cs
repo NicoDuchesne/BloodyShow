@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int threeStars;
     [SerializeField] private GameObject[] starsGO;
     [SerializeField] private Sprite starWin;
+    [SerializeField] saiveData saiveData;
 
 
     [HideInInspector]public bool destroyed = false;
@@ -95,6 +96,9 @@ public class GameManager : MonoBehaviour
     IEnumerator ManageStars()
     {
         int pipeCount = int.Parse(GameObject.Find("PipeCounter").GetComponent<TextMeshProUGUI>().text);
+        int stars = GetStars(pipeCount);
+        SaveStars(stars);
+
 
         yield return new WaitForSeconds(0.3f);
         starsGO[0].GetComponent<Image>().sprite = starWin;
@@ -112,6 +116,81 @@ public class GameManager : MonoBehaviour
         }
 
         
+    }
+
+    public int GetStars(int pipeCount)
+    {
+        if (pipeCount <= threeStars)
+        {
+            return 3;
+        } else if (pipeCount <= twoStars)
+        {
+            return 2;
+        } else
+        {
+            return 1;
+        }
+    }
+
+    public void SaveStars(int stars)
+    {
+        string actualScene = SceneManager.GetActiveScene().name;
+
+        saive mySave = saiveData.ReturnSave();
+
+        switch (actualScene)
+        {
+            case "Niveau1":
+                if(mySave.niveau1Star < stars) { mySave.niveau1Star = stars; }
+                break;
+            case "Niveau2":
+                if (mySave.niveau2Star < stars) { mySave.niveau2Star = stars; }
+                break;
+            case "Niveau3":
+                if (mySave.niveau3Star < stars) { mySave.niveau3Star = stars; }
+                break;
+            case "Niveau4":
+                if (mySave.niveau4Star < stars) { mySave.niveau4Star = stars; }
+                break;
+            case "Niveau5":
+                if (mySave.niveau5Star < stars) { mySave.niveau5Star = stars; }
+                break;
+            case "Niveau6":
+                if (mySave.niveau6Star < stars) { mySave.niveau6Star = stars; }
+                break;
+            case "Niveau7":
+                if (mySave.niveau7Star < stars) { mySave.niveau7Star = stars; }
+                break;
+            case "Niveau8":
+                if (mySave.niveau8Star < stars) { mySave.niveau8Star = stars; }
+                break;
+            case "Niveau9":
+                if (mySave.niveau9Star < stars) { mySave.niveau9Star = stars; }
+                break;
+            case "Niveau10":
+                if (mySave.niveau10Star < stars) { mySave.niveau10Star = stars; }
+                break;
+            case "Niveau11":
+                if (mySave.niveau11Star < stars) { mySave.niveau11Star = stars; }
+                break;
+            case "Niveau12":
+                if (mySave.niveau12Star < stars) { mySave.niveau12Star = stars; }
+                break;
+            case "Niveau13":
+                if (mySave.niveau13Star < stars) { mySave.niveau13Star = stars; }
+                break;
+            case "Niveau14":
+                if (mySave.niveau14Star < stars) { mySave.niveau14Star = stars; }
+                break;
+            case "Niveau15":
+                if (mySave.niveau15Star < stars) { mySave.niveau15Star = stars; }
+                break;
+            default :
+                Debug.Log("Error while saving the stars");
+                break;
+        }
+
+        saiveData.SaveToJson(mySave);
     }
 
     void CheckSceneAddAchievements()
