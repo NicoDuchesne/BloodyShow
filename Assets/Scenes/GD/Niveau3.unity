@@ -2752,7 +2752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13090,6 +13090,8 @@ MonoBehaviour:
   anim2: {fileID: 0}
   dialogue3: {fileID: 1461495295}
   anim3: {fileID: 139394653}
+  dialogue4: {fileID: 0}
+  dialogue5: {fileID: 0}
 --- !u!4 &1519328729
 Transform:
   m_ObjectHideFlags: 0

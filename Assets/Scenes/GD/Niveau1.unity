@@ -2459,7 +2459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13431,13 +13431,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue1: {fileID: 404846429}
-  dialogue3: {fileID: 0}
-  dialogue4: {fileID: 0}
-  dialogue5: {fileID: 0}
   anim: {fileID: 1353743671}
   animHand: {fileID: 1570285071}
-  animPoche: {fileID: 0}
-  animTuto4: {fileID: 0}
+  dialogue2: {fileID: 0}
+  anim2: {fileID: 0}
+  dialogue3: {fileID: 0}
+  anim3: {fileID: 0}
+  dialogue4: {fileID: 0}
+  dialogue5: {fileID: 0}
 --- !u!4 &1978405367
 Transform:
   m_ObjectHideFlags: 0
