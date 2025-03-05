@@ -18,7 +18,7 @@ public class AchievementManager : MonoBehaviour
             Social.ShowAchievementsUI();
     }
 
-    public void UnlockTutorial1Achievement()
+    public static void UnlockTutorial1Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -41,7 +41,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial2Achievement()
+    public static void UnlockTutorial2Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -64,7 +64,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial3Achievement()
+    public static void UnlockTutorial3Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -87,7 +87,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial4Achievement()
+    public static void UnlockTutorial4Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -110,7 +110,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial5Achievement()
+    public static void UnlockTutorial5Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -133,7 +133,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial6Achievement()
+    public static void UnlockTutorial6Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -156,7 +156,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial7Achievement()
+    public static void UnlockTutorial7Achievement()
     {
         if (Social.localUser.authenticated)
         {
@@ -179,7 +179,7 @@ public class AchievementManager : MonoBehaviour
 
     }
 
-    public void UnlockTutorial8Achievement()
+    public static void UnlockTutorial8Achievement()
     {
         if (Social.localUser.authenticated)
         {
