@@ -68,6 +68,8 @@ public class CatBin : MonoBehaviour, IDropHandler
             PipeCounter.Instance.Decrement();
         }
 
+        //Faire miaulements
+
 
     }
 
