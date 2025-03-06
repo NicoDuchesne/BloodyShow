@@ -11507,7 +11507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcd26afdedeadf46a029678a67bebde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipeCounterDisplay: {fileID: 0}
+  pipeCounterDisplay: {fileID: 1227440508}
 --- !u!114 &1227440508
 MonoBehaviour:
   m_ObjectHideFlags: 0
