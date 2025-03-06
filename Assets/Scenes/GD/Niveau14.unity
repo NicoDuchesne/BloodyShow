@@ -17360,9 +17360,9 @@ MonoBehaviour:
   twoStars: 27
   threeStars: 24
   starsGO:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1178947231}
+  - {fileID: 782895793}
+  - {fileID: 1840589381}
   starWin: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
   saiveData: {fileID: 2820678335168057428, guid: 08d199971f4cc1e468c9e3de57f4292e, type: 3}
   destroyed: 0
