@@ -1,28 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Changerleclone : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
+    public Image imageUI;
 
     // Sprite à changer
     public Sprite nouveauSprite;
 
-   public void ChangerLeSprite()
+    public void ChangerLeSprite()
     {
-        // Récupère le SpriteRenderer attaché à l'objet
-        spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // Vérifie que le SpriteRenderer est bien trouvé
-        if (spriteRenderer != null && nouveauSprite != null)
+        // Vérifie si l'image UI est assignée
+        if (imageUI != null && nouveauSprite != null)
         {
-            // Change le sprite
-            spriteRenderer.sprite = nouveauSprite;
+            // Change l'image affichée
+            imageUI.sprite = nouveauSprite;
         }
         else
         {
-            Debug.LogError("SpriteRenderer ou NouveauSprite non assigné !");
+            Debug.LogError("Image UI ou Nouveau Sprite non assigné !");
         }
     }
 }
