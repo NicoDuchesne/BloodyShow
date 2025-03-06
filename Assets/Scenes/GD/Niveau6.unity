@@ -2418,12 +2418,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9219ebdaf72b3da4d96730933dab02ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 956630899}
   blood1Here: 0
   blood2Here: 0
   blood3Here: 0
-  stade1: 30
-  stade2: 60
+  stade1: 50
+  stade2: 100
   stade3: 100
   fillSpeed: 20
   audioSource: {fileID: 577618734}
@@ -6195,12 +6195,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
-  _speed: 10
+  _speed: 7
   isMoving: 0
   isArrived: 0
-  maxInactivTime: 2
+  maxInactivTime: 1.5
   audioSource: {fileID: 1025823606}
   sound: {fileID: 8300000, guid: d67dcd02850d4b54da750683dc28e28e, type: 3}
 --- !u!61 &719798439
@@ -7742,12 +7742,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
-  _speed: 10
+  _speed: 7
   isMoving: 0
   isArrived: 0
-  maxInactivTime: 2
+  maxInactivTime: 1.5
   audioSource: {fileID: 803536562}
   sound: {fileID: 8300000, guid: d67dcd02850d4b54da750683dc28e28e, type: 3}
 --- !u!61 &884285203
@@ -10195,7 +10195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3216b64aba5d9f94785f8c0b77493db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseScreen: {fileID: 0}
+  pauseScreen: {fileID: 1243121973}
 --- !u!1 &1132178957
 GameObject:
   m_ObjectHideFlags: 0
@@ -19607,18 +19607,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac190ac59487174d81dcceae8657a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
-  indexPrefab: 0
+  rotation: 90
+  indexPrefab: 1
   prefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
+  - {fileID: 2109398876547990366, guid: b3a2fbf5b06fdb74b938f3f3df1861f4, type: 3}
   courbPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2109398876547990366, guid: 4c908389ab4290e46bde833ca1c2f837, type: 3}
+  - {fileID: 2109398876547990366, guid: 58f9661076464db48a89bfae4259fd08, type: 3}
+  - {fileID: 2109398876547990366, guid: 3bad6b697606cf64d99e322860d5660f, type: 3}
+  - {fileID: 2109398876547990366, guid: c93841e9437eaa94dacd43bb69f7175b, type: 3}
   isCourb: 0
-  isDouble: 0
+  isDouble: 1
   counter: 0
 --- !u!114 &7774830744525184743
 MonoBehaviour:
