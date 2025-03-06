@@ -2194,7 +2194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
   _speed: 10
   isMoving: 0
@@ -3841,7 +3841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9219ebdaf72b3da4d96730933dab02ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 956630899}
   blood1Here: 0
   blood2Here: 0
   blood3Here: 0
@@ -3849,8 +3849,8 @@ MonoBehaviour:
   stade2: 60
   stade3: 100
   fillSpeed: 20
-  audioSource: {fileID: 0}
-  sound: {fileID: 0}
+  audioSource: {fileID: 1565093327}
+  sound: {fileID: 8300000, guid: a28b2bdb8f4ddf4409e31e65bc53ef0a, type: 3}
 --- !u!1 &280897791
 GameObject:
   m_ObjectHideFlags: 0
@@ -10284,10 +10284,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6d9a16876396149b2b2e49c67fc4a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closed: {fileID: 0}
-  open: {fileID: 0}
-  audioSource: {fileID: 0}
-  miaous: []
+  closed: {fileID: 21300000, guid: 6f96852305978934280b7b732d37228d, type: 3}
+  open: {fileID: 21300000, guid: 2352539ccbdf8b6459565686201c2489, type: 3}
+  audioSource: {fileID: 2057615070}
+  miaous:
+  - {fileID: 8300000, guid: c2dae72d6ef498c4d97f4fe355453de4, type: 3}
+  - {fileID: 8300000, guid: d78798856fe04b844b052fe77a3d6f19, type: 3}
+  - {fileID: 8300000, guid: 541bfdc3e3c215b43babbf4f6ac4b579, type: 3}
+  - {fileID: 8300000, guid: a765d6c99158e4f42bcf4ae4cf433d0e, type: 3}
+  - {fileID: 8300000, guid: a46982203ca498c41a12211b487b29bf, type: 3}
+  - {fileID: 8300000, guid: ed2a10f1ed4642a4b8a46eb3a45bcb86, type: 3}
+  - {fileID: 8300000, guid: 780322c5ff5e3b847beb9dd709276b0e, type: 3}
+  - {fileID: 8300000, guid: 82feda3e06f19694cab56cb8cc3d3844, type: 3}
+  - {fileID: 8300000, guid: fa61628edf65b574d9eb0a8a8b1c3226, type: 3}
+  - {fileID: 8300000, guid: 512619fd563d0434e9cf9fff6cf935d1, type: 3}
 --- !u!1 &781789120
 GameObject:
   m_ObjectHideFlags: 0
@@ -11852,12 +11862,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac190ac59487174d81dcceae8657a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
+  rotation: 90
   indexPrefab: 0
-  prefabs: []
-  courbPrefabs: []
+  prefabs:
+  - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
+  - {fileID: 2109398876547990366, guid: b3a2fbf5b06fdb74b938f3f3df1861f4, type: 3}
+  courbPrefabs:
+  - {fileID: 2109398876547990366, guid: 4c908389ab4290e46bde833ca1c2f837, type: 3}
+  - {fileID: 2109398876547990366, guid: 58f9661076464db48a89bfae4259fd08, type: 3}
+  - {fileID: 2109398876547990366, guid: 3bad6b697606cf64d99e322860d5660f, type: 3}
+  - {fileID: 2109398876547990366, guid: c93841e9437eaa94dacd43bb69f7175b, type: 3}
   isCourb: 0
-  isDouble: 0
+  isDouble: 1
   counter: 0
 --- !u!114 &922732291
 MonoBehaviour:
@@ -15343,7 +15359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dcd26afdedeadf46a029678a67bebde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipeCounterDisplay: {fileID: 0}
+  pipeCounterDisplay: {fileID: 1227440508}
 --- !u!114 &1227440508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20803,12 +20819,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac190ac59487174d81dcceae8657a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
-  indexPrefab: 0
-  prefabs: []
-  courbPrefabs: []
-  isCourb: 0
-  isDouble: 0
+  rotation: 90
+  indexPrefab: 1
+  prefabs:
+  - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
+  - {fileID: 2109398876547990366, guid: b3a2fbf5b06fdb74b938f3f3df1861f4, type: 3}
+  courbPrefabs:
+  - {fileID: 2109398876547990366, guid: 4c908389ab4290e46bde833ca1c2f837, type: 3}
+  - {fileID: 2109398876547990366, guid: 4c908389ab4290e46bde833ca1c2f837, type: 3}
+  - {fileID: 2109398876547990366, guid: 58f9661076464db48a89bfae4259fd08, type: 3}
+  - {fileID: 2109398876547990366, guid: c93841e9437eaa94dacd43bb69f7175b, type: 3}
+  isCourb: 1
+  isDouble: 1
   counter: 0
 --- !u!114 &1758065496
 MonoBehaviour:
@@ -25549,12 +25571,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac190ac59487174d81dcceae8657a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
+  rotation: 90
   indexPrefab: 0
-  prefabs: []
-  courbPrefabs: []
-  isCourb: 0
-  isDouble: 0
+  prefabs:
+  - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
+  - {fileID: 2109398876547990366, guid: b3a2fbf5b06fdb74b938f3f3df1861f4, type: 3}
+  courbPrefabs:
+  - {fileID: 2109398876547990366, guid: 4c908389ab4290e46bde833ca1c2f837, type: 3}
+  - {fileID: 2109398876547990366, guid: 58f9661076464db48a89bfae4259fd08, type: 3}
+  - {fileID: 2109398876547990366, guid: 3bad6b697606cf64d99e322860d5660f, type: 3}
+  - {fileID: 2109398876547990366, guid: c93841e9437eaa94dacd43bb69f7175b, type: 3}
+  isCourb: 1
+  isDouble: 1
   counter: 0
 --- !u!222 &2634789466307724511
 CanvasRenderer:
