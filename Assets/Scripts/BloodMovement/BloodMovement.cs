@@ -21,6 +21,10 @@ public class BloodMovement : MonoBehaviour
     public float maxInactivTime = 2f;
     private float InactivTimer;
 
+    //Son
+    public AudioSource audioSource;
+    public AudioClip sound;
+
 
     void OnTriggerStay2D(Collider2D pipes)
     {
@@ -34,11 +38,21 @@ public class BloodMovement : MonoBehaviour
                    //countValve++;
                     rotate.counter++;
                     rotate.RefreshSprite();
-                   //code pour  changer les sprites
-                   //ValveChengement valveChengement = pipes.GetComponentInChildren<ValveChengement>();
-                   //valveChengement.valide++;
-                   //valveChengement.Changemennt();
-                 }
+
+                    if (rotate.counter <= 2 && rotate.isDouble)
+                    {
+                        audioSource.PlayOneShot(sound);
+                    }
+
+                    if (rotate.counter <= 1 && !rotate.isDouble)
+                    {
+                        audioSource.PlayOneShot(sound);
+                    }
+                    //code pour  changer les sprites
+                    //ValveChengement valveChengement = pipes.GetComponentInChildren<ValveChengement>();
+                    //valveChengement.valide++;
+                    //valveChengement.Changemennt();
+                }
                  if (pipes.transform.parent.gameObject.name.Equals("End"))
                  {
                    isArrived = true;
