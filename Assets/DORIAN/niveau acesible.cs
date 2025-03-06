@@ -28,19 +28,19 @@ public class niveauAcesible : MonoBehaviour
 
     public void Start()  
     {
-        myButtonNiveau2.interactable  =saiveData.saive.niveau2;
-        myButtonNiveau3.interactable  =saiveData.saive.niveau3;
-        myButtonNiveau4.interactable  =saiveData.saive.niveau4;
-        myButtonNiveau5.interactable  =saiveData.saive.niveau5;
-        myButtonNiveau6.interactable  =saiveData.saive.niveau6;
-        myButtonNiveau7.interactable  =saiveData.saive.niveau7;
-        myButtonNiveau8.interactable  =saiveData.saive.niveau8;
-        myButtonNiveau9.interactable  = saiveData.saive.niveau9;
-        myButtonNiveau10.interactable =saiveData.saive.niveau10;
-        myButtonNiveau11.interactable =saiveData.saive.niveau11;
-        myButtonNiveau12.interactable =saiveData.saive.niveau12;
-        myButtonNiveau13.interactable =saiveData.saive.niveau13;
-        myButtonNiveau14.interactable =saiveData.saive.niveau14;
+        myButtonNiveau2.interactable = saiveData.saive.niveau2;
+        myButtonNiveau3.interactable = saiveData.saive.niveau3;
+        myButtonNiveau4.interactable = saiveData.saive.niveau4;
+        myButtonNiveau5.interactable = saiveData.saive.niveau5;
+        myButtonNiveau6.interactable = saiveData.saive.niveau6;
+        myButtonNiveau7.interactable = saiveData.saive.niveau7;
+        myButtonNiveau8.interactable = saiveData.saive.niveau8;
+        myButtonNiveau9.interactable = saiveData.saive.niveau9;
+        myButtonNiveau10.interactable = saiveData.saive.niveau10;
+        myButtonNiveau11.interactable = saiveData.saive.niveau11;
+        myButtonNiveau12.interactable = saiveData.saive.niveau12;
+        myButtonNiveau13.interactable = saiveData.saive.niveau13;
+        myButtonNiveau14.interactable = saiveData.saive.niveau14;
         myButtonNiveau15.interactable = saiveData.saive.niveau15;
 
         myButtonNiveau1.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().color = myYellow;
