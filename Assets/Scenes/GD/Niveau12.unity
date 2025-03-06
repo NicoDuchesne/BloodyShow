@@ -6740,8 +6740,8 @@ RectTransform:
   m_Children:
   - {fileID: 562961491}
   - {fileID: 1014171892}
-  - {fileID: 994871470}
   - {fileID: 315911147}
+  - {fileID: 994871470}
   - {fileID: 1299841871}
   - {fileID: 633626531}
   - {fileID: 360155342}
@@ -12839,11 +12839,11 @@ RectTransform:
   - {fileID: 1108637702}
   m_Father: {fileID: 1952180067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 734, y: 620}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -262, y: -165}
   m_SizeDelta: {x: 137, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.065}
 --- !u!114 &1036797636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16962,6 +16962,7 @@ MonoBehaviour:
   - {fileID: 24526509}
   - {fileID: 1014171889}
   starWin: {fileID: 21300000, guid: 671c6d823d605274a8137177266131dd, type: 3}
+  saiveData: {fileID: 2820678335168057428, guid: 08d199971f4cc1e468c9e3de57f4292e, type: 3}
   destroyed: 0
   won: 0
 --- !u!114 &1457303674

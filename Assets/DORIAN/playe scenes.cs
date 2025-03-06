@@ -70,100 +70,100 @@ public class playescenes : MonoBehaviour
     }
     public void LoadSceneNiveau2()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau2 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau2 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau2");
     }
     public void LoadSceneNiveau3()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau3 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau3 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau3");
     }
     public void LoadSceneNiveau4()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau4 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau4 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau4");
     }
     public void LoadSceneNiveau5()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau5 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau5 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau5");
     }
     public void LoadSceneNiveau6()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau6 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau6 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau6");
     }
     public void LoadSceneNiveau7()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau7 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau7 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau7");
     }
     public void LoadSceneNiveau8()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau8 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau8 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau8");
     }
     public void LoadSceneNiveau9()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau9 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau9 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau9");
     }
     public void LoadSceneNiveau10()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau10 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau10 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau10");
     }
     public void LoadSceneNiveau11()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau11 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau11 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau11");
     }
     public void LoadSceneNiveau12()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau2 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau2 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau12");
     }
     public void LoadSceneNiveau13()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau2 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau2 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau13");
     }
     public void LoadSceneNiveau14()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau2 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau2 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau14");
     }
     public void LoadSceneNiveau15()
     {
-        saive mySave = saiveData.ReturnSave();
-        mySave.niveau2 = true;
-        saiveData.SaveToJson(mySave);
+        //saive mySave = saiveData.ReturnSave();
+        //mySave.niveau2 = true;
+        //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau15");
     }
 }
