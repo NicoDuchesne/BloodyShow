@@ -6639,6 +6639,8 @@ MonoBehaviour:
   isMoving: 0
   isArrived: 0
   maxInactivTime: 1.5
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!61 &687556561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8276,6 +8278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saiveData: {fileID: 2820678335168057428, guid: 08d199971f4cc1e468c9e3de57f4292e, type: 3}
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!114 &836374666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8638,6 +8642,8 @@ MonoBehaviour:
   isMoving: 0
   isArrived: 0
   maxInactivTime: 1.5
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!61 &894340643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17059,7 +17065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f62439c917fa6394bb570c04d44bcfde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c62ce06c8f03ca24aaa57908bbb37cc9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
