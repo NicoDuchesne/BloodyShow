@@ -3240,6 +3240,8 @@ MonoBehaviour:
   isMoving: 0
   isArrived: 0
   maxInactivTime: 1.5
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!61 &340333979
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3564,8 +3566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 20, y: 4}
-  m_SizeDelta: {x: 1325, y: 1699}
+  m_AnchoredPosition: {x: 55, y: 45}
+  m_SizeDelta: {x: 1026.3, y: 2472.01}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &365243181
 MonoBehaviour:
@@ -8922,6 +8924,8 @@ MonoBehaviour:
   isMoving: 0
   isArrived: 0
   maxInactivTime: 1.5
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!61 &894340643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15605,6 +15609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saiveData: {fileID: 2820678335168057428, guid: 08d199971f4cc1e468c9e3de57f4292e, type: 3}
+  audioSource: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!114 &1825293294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16731,8 +16737,8 @@ RectTransform:
   - {fileID: 2057891044}
   - {fileID: 1353743668}
   - {fileID: 1886011707}
-  - {fileID: 1050687006}
   - {fileID: 365243180}
+  - {fileID: 1050687006}
   - {fileID: 1972384785}
   - {fileID: 964785754}
   - {fileID: 235421448}
