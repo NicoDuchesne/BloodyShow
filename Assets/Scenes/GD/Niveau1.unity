@@ -6803,7 +6803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25.9, y: 15.4}
+  m_AnchoredPosition: {x: -25.899994, y: 15.399994}
   m_SizeDelta: {x: 254, y: 1621}
   m_Pivot: {x: 0.5, y: 0.09}
 --- !u!114 &966957980
@@ -7641,7 +7641,6 @@ GameObject:
   - component: {fileID: 1116723241}
   - component: {fileID: 1116723244}
   - component: {fileID: 1116723243}
-  - component: {fileID: 1116723242}
   - component: {fileID: 1116723245}
   m_Layer: 5
   m_Name: Rope
@@ -7669,26 +7668,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.6, y: 0}
   m_SizeDelta: {x: 254, y: 1621}
   m_Pivot: {x: 0.5, y: 0.09}
---- !u!114 &1116723242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116723240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!114 &1116723243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10796,7 +10775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 35.7, y: 15.4}
+  m_AnchoredPosition: {x: 35.699997, y: 15.399994}
   m_SizeDelta: {x: 254, y: 1621}
   m_Pivot: {x: 0.5, y: 0.09}
 --- !u!114 &1561297564
