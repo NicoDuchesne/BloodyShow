@@ -27,7 +27,7 @@ Material:
   m_ValidKeywords:
   - _AXIS_HORIZONTAL
   - _CORNER_BUTTOM_RIGHT
-  - _MODE_RADIAL
+  - _MODE_LINEAR
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -64,10 +64,10 @@ Material:
     - _AXIS: 0
     - _CORNER: 2
     - _Inverse: 0
-    - _MODE: 1
+    - _MODE: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Value: 0.36
+    - _Value: 1
     m_Colors:
     - _Pivot: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
