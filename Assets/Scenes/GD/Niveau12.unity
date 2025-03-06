@@ -23674,7 +23674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
   _speed: 7
   isMoving: 0
