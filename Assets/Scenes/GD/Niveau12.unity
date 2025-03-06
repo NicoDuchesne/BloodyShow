@@ -3850,7 +3850,7 @@ MonoBehaviour:
   stade3: 100
   fillSpeed: 20
   audioSource: {fileID: 1565093327}
-  sound: {fileID: 8300000, guid: a28b2bdb8f4ddf4409e31e65bc53ef0a, type: 3}
+  sound: {fileID: 8300000, guid: 74079eb87d9348b4e9944d746dc4250c, type: 3}
 --- !u!1 &280897791
 GameObject:
   m_ObjectHideFlags: 0
@@ -14262,7 +14262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3216b64aba5d9f94785f8c0b77493db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseScreen: {fileID: 0}
+  pauseScreen: {fileID: 1243121973}
 --- !u!1 &1132178957
 GameObject:
   m_ObjectHideFlags: 0
