@@ -14367,6 +14367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saiveData: {fileID: 76330471}
+  audioSource: {fileID: 1740121138}
+  sound: {fileID: 8300000, guid: 81d208c74fa038447a7f2c5e6b16514f, type: 3}
 --- !u!114 &2046747465
 MonoBehaviour:
   m_ObjectHideFlags: 0

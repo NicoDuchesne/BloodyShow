@@ -6,6 +6,10 @@ public class playescenes : MonoBehaviour
     
     [SerializeField] saiveData saiveData;
 
+    //Son
+    public AudioSource audioSource;
+    public AudioClip sound;
+
     public void LoadSceneMenue()
     {
         SceneManager.LoadScene("NextSceneName");
@@ -67,6 +71,7 @@ public class playescenes : MonoBehaviour
     public void LoadSceneNiveau1()
     {
         SceneManager.LoadScene("Niveau1");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau2()
     {
@@ -74,6 +79,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau2 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau2");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau3()
     {
@@ -81,6 +87,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau3 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau3");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau4()
     {
@@ -88,6 +95,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau4 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau4");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau5()
     {
@@ -95,6 +103,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau5 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau5");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau6()
     {
@@ -102,6 +111,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau6 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau6");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau7()
     {
@@ -109,6 +119,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau7 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau7");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau8()
     {
@@ -116,6 +127,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau8 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau8");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau9()
     {
@@ -123,6 +135,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau9 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau9");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau10()
     {
@@ -130,6 +143,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau10 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau10");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau11()
     {
@@ -137,6 +151,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau11 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau11");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau12()
     {
@@ -144,6 +159,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau2 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau12");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau13()
     {
@@ -151,6 +167,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau2 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau13");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau14()
     {
@@ -158,6 +175,7 @@ public class playescenes : MonoBehaviour
         //mySave.niveau2 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau14");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
     public void LoadSceneNiveau15()
     {
@@ -165,5 +183,6 @@ public class playescenes : MonoBehaviour
         //mySave.niveau2 = true;
         //saiveData.SaveToJson(mySave);
         SceneManager.LoadScene("Niveau15");
+        audioSource.PlayOneShot(sound);   //clic niveau
     }
 }
