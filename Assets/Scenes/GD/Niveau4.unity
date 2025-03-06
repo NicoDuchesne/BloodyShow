@@ -700,14 +700,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
-  _speed: 10
+  _speed: 7
   isMoving: 0
   isArrived: 0
-  maxInactivTime: 2
-  audioSource: {fileID: 0}
-  sound: {fileID: 0}
+  maxInactivTime: 1.5
+  audioSource: {fileID: 2078167057}
+  sound: {fileID: 8300000, guid: d67dcd02850d4b54da750683dc28e28e, type: 3}
 --- !u!61 &33673264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2796,12 +2796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9219ebdaf72b3da4d96730933dab02ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 956630899}
   blood1Here: 0
   blood2Here: 0
   blood3Here: 0
-  stade1: 30
-  stade2: 60
+  stade1: 50
+  stade2: 100
   stade3: 100
   fillSpeed: 20
   audioSource: {fileID: 577618734}
@@ -7264,14 +7264,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b792d0d75bc78164d98c4d914d9aee72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jaugeBlood: {fileID: 0}
+  jaugeBlood: {fileID: 275644787}
   targetPosition: {x: 0, y: 0}
-  _speed: 10
+  _speed: 7
   isMoving: 0
   isArrived: 0
-  maxInactivTime: 2
-  audioSource: {fileID: 0}
-  sound: {fileID: 0}
+  maxInactivTime: 1.5
+  audioSource: {fileID: 2078167057}
+  sound: {fileID: 8300000, guid: d67dcd02850d4b54da750683dc28e28e, type: 3}
 --- !u!61 &725658178
 BoxCollider2D:
   m_ObjectHideFlags: 0
