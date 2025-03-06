@@ -8,6 +8,9 @@ public class CatBin : MonoBehaviour, IDropHandler
 {
     [SerializeField] public Sprite closed;
     [SerializeField] public Sprite open;
+    [SerializeField] public AudioSource audioSource;
+    [SerializeField] public AudioClip[] miaous;
+
     private SpriteRenderer spriteRenderer;
 
     private static CatBin instance = null;
@@ -60,6 +63,9 @@ public class CatBin : MonoBehaviour, IDropHandler
                     {
 
                         Destroy(child.gameObject);
+                        //Faire miaulements
+                        int rand = Random.Range(0, 10);
+                        audioSource.PlayOneShot(miaous[rand]);
                     }
                 }
             }
@@ -68,8 +74,7 @@ public class CatBin : MonoBehaviour, IDropHandler
             PipeCounter.Instance.Decrement();
         }
 
-        //Faire miaulements
-
+        
 
     }
 
