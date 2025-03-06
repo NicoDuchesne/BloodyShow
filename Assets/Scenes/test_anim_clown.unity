@@ -1077,7 +1077,6 @@ GameObject:
   m_Component:
   - component: {fileID: 144712902}
   - component: {fileID: 144712904}
-  - component: {fileID: 144712903}
   - component: {fileID: 144712905}
   m_Layer: 0
   m_Name: Clown
@@ -1103,20 +1102,6 @@ Transform:
   - {fileID: 1259534764}
   m_Father: {fileID: 1952180067}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &144712903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144712901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5109a8f1d90deb54eac6e9fa97f8968a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageUI: {fileID: 0}
-  nouveauSprite: {fileID: 21300000, guid: 4748660c03a40dc4d9af4ae4767dcd2e, type: 3}
 --- !u!212 &144712904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8048,7 +8033,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1075032102}
   - component: {fileID: 1075032104}
-  - component: {fileID: 1075032103}
   m_Layer: 0
   m_Name: meche
   m_TagString: Untagged
@@ -8071,20 +8055,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 144712902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1075032103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1075032101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5109a8f1d90deb54eac6e9fa97f8968a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageUI: {fileID: 0}
-  nouveauSprite: {fileID: 21300000, guid: 4748660c03a40dc4d9af4ae4767dcd2e, type: 3}
 --- !u!212 &1075032104
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9580,7 +9550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1259534764}
   - component: {fileID: 1259534766}
-  - component: {fileID: 1259534765}
   m_Layer: 0
   m_Name: mask
   m_TagString: Untagged
@@ -9603,20 +9572,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 144712902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1259534765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259534763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5109a8f1d90deb54eac6e9fa97f8968a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imageUI: {fileID: 0}
-  nouveauSprite: {fileID: 21300000, guid: 4748660c03a40dc4d9af4ae4767dcd2e, type: 3}
 --- !u!212 &1259534766
 SpriteRenderer:
   m_ObjectHideFlags: 0
