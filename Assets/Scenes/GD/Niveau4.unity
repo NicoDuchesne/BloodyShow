@@ -3069,7 +3069,7 @@ MonoBehaviour:
   stade1: 50
   stade2: 100
   stade3: 100
-  fillSpeed: 20
+  fillSpeed: 28
   audioSource: {fileID: 577618734}
   sound: {fileID: 8300000, guid: 74079eb87d9348b4e9944d746dc4250c, type: 3}
 --- !u!1 &298805669
@@ -18916,7 +18916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac190ac59487174d81dcceae8657a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 0
+  rotation: 90
   indexPrefab: 1
   prefabs:
   - {fileID: 5039337981516017355, guid: 3c3178a32fd51d94b97edb008a380ecd, type: 3}
@@ -18927,7 +18927,7 @@ MonoBehaviour:
   - {fileID: 2109398876547990366, guid: 3bad6b697606cf64d99e322860d5660f, type: 3}
   - {fileID: 2109398876547990366, guid: c93841e9437eaa94dacd43bb69f7175b, type: 3}
   isCourb: 0
-  isDouble: 0
+  isDouble: 1
   counter: 0
 --- !u!224 &444669941744721325
 RectTransform:
